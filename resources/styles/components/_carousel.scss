@@ -1,0 +1,42 @@
+.carousel-in-page {
+  &.carousel-fade {
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+    }
+
+    .carousel-item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        max-height: 400px;
+
+        @include media-breakpoint-up(md) {
+          min-height: 600px;
+          max-height: 600px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          min-height: 700px;
+          max-height: 700px;
+        }
+
+        object-fit: cover;
+      }
+    }
+
+    .active {
+
+      &.carousel-item-start,
+      &.carousel-item-end {
+        transition: opacity 0s 2s;
+      }
+    }
+  }
+}

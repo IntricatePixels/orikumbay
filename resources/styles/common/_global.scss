@@ -1,0 +1,87 @@
+html,
+body {
+  scroll-behavior: xsooth;
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: $font-family; 
+  background: white;
+  text-rendering: geometricprecision;
+  color: $brown;
+  font-display: swap;
+  color: #81755f;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+p, 
+div {
+  font-weight: 300;
+  color: #131814;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family; 
+  color: var(--bs-heading-color, inherit);
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: 300;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.desktop-break {
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+  display: none;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.max-width-700 {
+  max-width: 700px;
+}
+
+.container-1320 {
+  max-width: 1320px;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+@include media-breakpoint-up(lg) {
+  .border-end-custom {
+    border-right: 1px solid #81755f; /* Adjust the color and style as needed */
+  }
+
+  .border-end-custom:last-child {
+    border-right: none;
+  }
+}

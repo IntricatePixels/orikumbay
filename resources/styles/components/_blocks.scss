@@ -1,0 +1,170 @@
+section.block-two-panels p {
+  color: #fff;
+}
+
+section.faq .card {
+  background-color: transparent;
+  border: none;
+}
+
+section.faq .card-header {
+  padding: 0;
+  background-color: transparent;
+}
+
+section.faq .card-body {
+  padding: 1.25rem 0;
+}
+
+section.faq .accordion .btn {
+  padding-left: 0;
+  text-align: left;
+}
+
+.accordion-item button svg {
+  width: 10px;
+}
+
+section.faq .accordion .btn.btn-link {
+  color: $brown;
+}
+
+section.faq.faq-new-layout {
+  background: linear-gradient(90deg, rgba(89, 57, 122, .07), rgba(0, 122, 183, .07), rgba(91, 144, 66, .07));
+}
+
+section.faq.faq-new-layout .container {
+  max-width: 800px;
+}
+
+.side-border.bottom-border {
+  position: relative;
+}
+
+.full-width-banner-cta {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+}
+
+.cta-banner-full-bg {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.cta-banner-full-bg .hero-text {
+  background-color: #fff;
+}
+
+.cta-banner-full-bg .hero-text h1 {
+  color: $brown;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.cta-banner-full-bg .hero-text p {
+  color: $brown;
+}
+
+section.block.block-big-cta {
+  background-color: $brown;
+  color: #fff;
+
+  >* {
+    color: #fff;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  .headline {
+    font-size: 3.25rem;
+    line-height: 1;
+  }
+
+}
+
+.banner-pillar {
+  
+  img.hero-image-desktop {
+    object-fit: contain;
+  }
+
+  h1 {
+      font-size: 3.5rem;
+      font-size: clamp(3rem, 5vw, 3.6rem);
+      color: #3a4048;
+      line-height: 1.1;
+      font-weight: 700;
+
+      span {
+
+        @include media-breakpoint-down(md) {
+          margin: 0 !important;
+        }
+
+        &.main-gradient {
+          -webkit-text-fill-color: #0000;
+          -moz-text-fill-color: #0000;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-color: #f49701;
+          background-image: $custom-gradient;
+          background-size: 100%;
+          width: -moz-fit-content;
+          width: fit-content;
+        }
+      }
+  }
+
+}
+ 
+
+@include media-breakpoint-up(lg) {
+
+  section.block.block-centered-image .boxy2,
+  section.block.block-centered-image .boxy4 {
+    margin-top: 5rem;
+  }
+
+  .cta-banner-full-bg {
+    min-height: 370px;
+  }
+
+}
+
+@include media-breakpoint-down(lg) {
+
+  section.block.block-big-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  section.block.block-big-cta .headline {
+    font-size: 2.5rem;
+  }
+
+  section.block.new {
+    h2 {
+      font-size: 2.2rem;
+
+      &[data-title]:before {
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .banner.new h1 {
+    font-size: 4rem;
+  }
+}

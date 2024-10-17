@@ -1,0 +1,47 @@
+:root {
+  --bs-heading-color: #212721; /* Custom heading color */
+}
+
+$border: 1px solid #e6e6e6;
+$brown: #81755f;
+$font-size-normal: 1.063rem;
+$font-size-large: 1.125rem;
+$background-grey: #f4f8fa;
+$background-light-grey: #fafafa;
+$mimeo-blue: #007ab7;
+$mimeo-blue-light: #f4f8fa;
+$mimeo-green: #5b9042;
+$mimeo-purple-light: #f9f7fd;
+$mimeo-purple: #59397a;
+$mimeo-green-light: #f2f8ef;
+$font-color-lighter: #7f7f7f;
+$font-family: 'Helvetica Neue', sans-serif;
+$small-text : 0.875rem;
+$normal-text : 1rem;
+$large-text : 2rem;
+$largest-text : 3rem;
+$font-green: #212721;
+$casa-light-bg: #f4f0f3;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1240px,
+  xxl: 1320px
+);
+
+$font-normal: 400;
+$font-semi: 600;
+$font-bold: 700;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+
+$custom-gradient: linear-gradient(90deg,#212721, #272c42,#353d34);
+
+
+
+

@@ -1,0 +1,52 @@
+/* stylelint-disable */
+:root {
+  --global--spacing-horizontal: 25px;
+}
+
+.editor-styles-wrapper {
+  width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 966px);
+  margin: 0 auto !important;
+  font-family: 'Helvetica', sans-serif;
+  color: #585858;
+  line-height: 32px;
+}
+
+.editor-styles-wrapper .wp-block {
+  margin-left: auto;
+  margin-right: left;
+}
+
+figure.wp-block-image.aligncenter {
+  text-align: center;
+}
+
+html :where(.editor-styles-wrapper) h1,
+html :where(.editor-styles-wrapper) h2,
+html :where(.editor-styles-wrapper) h3,
+html :where(.editor-styles-wrapper) h4,
+html :where(.editor-styles-wrapper) h5,
+html :where(.editor-styles-wrapper) h6,
+html :where(.editor-styles-wrapper) select {
+  font-size: revert;
+  margin: revert;
+  color: revert;
+  line-height: revert;
+  font-weight: inherit;
+}
+
+html :where(.editor-styles-wrapper) h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+html :where(.editor-styles-wrapper) h2 {
+  font-weight: 400;
+  font-size: 1.825rem;
+
+  a {
+    color: initial;
+    text-decoration: none;
+  }
+}
+
+/* stylelint-enable */
