@@ -1,4 +1,8 @@
-<div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasmenu">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas-header pt-5">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Main Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
     <div class="offcanvas-body d-flex flex-column p-3">
         <div class="flex-fill">
             @if (has_nav_menu('primary_navigation'))
