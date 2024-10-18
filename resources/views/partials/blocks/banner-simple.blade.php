@@ -8,9 +8,7 @@
 
     <section class="banner-simple in-page-section position-relative vh-100 d-flex align-items-end pb-5" id="banner-simple-@php echo get_row_index() @endphp">
         @if ($background_image)
-            <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}"
-                class="position-absolute top-0 start-0 w-100 vh-100 object-fit-cover" id="hero-background"
-                style="border-bottom-right-radius: 130px;">
+            <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 object-fit-cover" style="border-bottom-right-radius: 130px; top: -140px !important; height: calc(100vh + 140px) !important">
         @endif
         @if ($video_embed)
             <video style="width: 100vw; height: 100vh; object-fit: cover;" id="hero-video" class="video-bg" autoplay loop
