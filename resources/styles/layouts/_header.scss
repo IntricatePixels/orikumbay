@@ -116,6 +116,10 @@ img.banner-icon {
   flex-wrap: nowrap;
 }
 
+.navbar {
+  background-color: $background-color;
+}
+
 .navbar,
 .navbar > .header-container {
   display: flex;
