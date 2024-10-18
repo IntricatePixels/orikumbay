@@ -17,12 +17,11 @@
                         @php the_row() @endphp
                         @php $number = get_sub_field('number')@endphp
                         @php $title = get_sub_field('title')@endphp
-
                         <div
                             class="col-6 col-md-@php echo esc_attr($colvalue) @endphp text-center side-border bottom-border">
                             <div class="py-5">
-                                <h3>@php echo $number @endphp</h3>
-                                <p class="mb-0">@php echo $title @endphp </p>
+                                <h3 class="fs-5 fw-normal">@php echo $number @endphp</h3>
+                                <p class="fw-bold fs-3 mb-0">@php echo $title @endphp </p>
                             </div>
                         </div>
                     @endwhile
