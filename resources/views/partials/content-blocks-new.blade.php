@@ -6,7 +6,7 @@
         @include('partials/blocks/new-block-cta-full-bg-image')
         @include('partials/blocks/new-block-products-grid')
         @include('partials/blocks/new-block-in-page-links')
-        @include('partials/blocks/new-block-pillar-page')
+        @include('partials/blocks/pillar-page')
         @include('partials/blocks/new-block-case-study')
         @include('partials/blocks/new-block-image-gallery-slider')
         @include('partials/blocks/new-block-image-with-list')
