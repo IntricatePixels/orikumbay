@@ -1,4 +1,4 @@
-@if (get_row_layout() == 'hero_banner_pillar_page')
+@if (get_row_layout() == 'banner_main_hero')
     @php
         $background_image = get_sub_field('background_image');
         $size = 'full';

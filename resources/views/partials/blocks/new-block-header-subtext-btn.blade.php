@@ -7,7 +7,7 @@
                         <h2 class="text-center py-5 font-black fs-1">@php the_sub_field('header') @endphp</h2>
                     @endif
                     @if (get_sub_field('subtext'))
-                        <div class="max-width-700 mx-auto text-center mb-5 fs-5">@php the_sub_field('subtext') @endphp</div>
+                        <div class="mx-auto text-center mb-5 fs-5">@php the_sub_field('subtext') @endphp</div>
                     @endif
                         @php $link = get_sub_field('button') @endphp
                         @if ($link)
