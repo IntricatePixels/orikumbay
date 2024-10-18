@@ -33,7 +33,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -53,7 +53,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -85,56 +85,6 @@
                                     }
                                 ]
                             ],
-                            "wrapper": {
-                                "width": "33",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "preview_size": "medium"
-                        },
-                        {
-                            "key": "field_65df4bf01da40",
-                            "label": "Banner Right Side Image",
-                            "name": "banner_right_side_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "33",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "preview_size": "medium"
-                        },
-                        {
-                            "key": "field_65f17987366bb",
-                            "label": "Eyebrow Image",
-                            "name": "eyebrow_image",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "33",
                                 "class": "",
@@ -200,26 +150,6 @@
                             "return_format": "array"
                         },
                         {
-                            "key": "field_65f1754b5ba3f",
-                            "label": "Show Logos Below Hero",
-                            "name": "show_logos_below_hero",
-                            "aria-label": "",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "33",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui_on_text": "",
-                            "ui_off_text": "",
-                            "ui": 1
-                        },
-                        {
                             "key": "field_666b2f7f64791",
                             "label": "Video Embed - Enter URL",
                             "name": "video_embed",
@@ -238,34 +168,6 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
-                        },
-                        {
-                            "key": "field_666b39c286c48",
-                            "label": "Gallery",
-                            "name": "gallery",
-                            "aria-label": "",
-                            "type": "gallery",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "library": "all",
-                            "min": "",
-                            "max": "",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "insert": "append",
-                            "preview_size": "medium"
                         }
                     ],
                     "min": "",
@@ -3886,5 +3788,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729233219
+    "modified": 1729265624
 }

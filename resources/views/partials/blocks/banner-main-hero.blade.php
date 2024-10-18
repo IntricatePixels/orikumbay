@@ -30,8 +30,7 @@ $gallery_images = get_sub_field('gallery'); // ACF Gallery field
         Your browser does not support the video tag.
     </video>
     @endif
-    <h1 class="text-white text-center mb-3 mb-lg-4 m-md-0 position-relative w-100">{{ the_sub_field('hero_title') }}
-    </h1>
+    <h1 class="text-white mb-3 mb-lg-4 position-relative w-100 mx-auto d-flex flex-column" style="max-width: 500px;">{{ the_sub_field('hero_title') }}</h1>
 </section>
 <script>
     function hideBackgroundImage() {
