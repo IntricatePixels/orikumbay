@@ -19,7 +19,7 @@
         }
     @endphp
 
-    <section class="block new block-products-grid in-page-section px-lg-4 px-4 px-md-0 pb-5 my-5 {{ $max_width_980 }} py-5" id="product-grid-{{ get_row_index() }}" data-section-name="">
+    <section class="block new block-products-grid in-page-section px-lg-4 px-4 px-md-0 pb-5 mb-5 {{ $max_width_980 }} py-5" id="product-grid-{{ get_row_index() }}" data-section-name="">
         <div class="container pb-5">
             <div class="col-12 mt-lg-5">
                 <p class="hero-eyebrow">{{ the_sub_field('header_eyebrow') }}</p>

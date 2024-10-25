@@ -3,6 +3,7 @@
         @php the_row() @endphp
         @include('partials/blocks/banner-main-hero')
         @include('partials/blocks/banner-simple')
+        @include('partials/blocks/banner-simple-location')
         @include('partials/blocks/new-block-three-columns-icon')
         @include('partials/blocks/new-block-in-numbers')
         @include('partials/blocks/new-block-cta-full-bg-image')
