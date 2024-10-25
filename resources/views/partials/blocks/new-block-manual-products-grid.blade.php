@@ -24,7 +24,7 @@
             <div class="col-12 mt-lg-5">
                 <p class="hero-eyebrow">{{ the_sub_field('header_eyebrow') }}</p>
                 <h2 class="mb-3 pt-0 mt-0 font-black text-center">{{ the_sub_field('header') }}</h2>
-                <div class="text-center mb-5 py-3">{{ the_sub_field('subhead') }}</div>
+                <div class="text-center mb-5 py-3 max-width-600 mx-auto">{{ the_sub_field('subhead') }}</div>
             </div>
             <div class="row gx-5 gy-4">
                 @if (have_rows('grid'))
