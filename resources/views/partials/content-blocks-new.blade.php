@@ -2,6 +2,7 @@
     @while (have_rows('blocks'))
         @php the_row() @endphp
         @include('partials/blocks/banner-main-hero')
+        @include('partials/blocks/banner-simple-right-side-label')
         @include('partials/blocks/banner-simple')
         @include('partials/blocks/banner-simple-location')
         @include('partials/blocks/new-block-three-columns-icon')
