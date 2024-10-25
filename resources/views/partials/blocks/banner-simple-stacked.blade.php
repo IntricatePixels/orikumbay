@@ -16,9 +16,9 @@
 
     <div class="container p-5">
         <div class="row z-1 max-width-600 mx-auto">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" style="z-index: inherit;">
                 @if ($image)
-                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" style="height: 100%;width: auto;max-width: 500px;">
+                    <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endif
             </div>
             <div class="col-12 text-center">
