@@ -4,6 +4,12 @@
       "js/runtime.js",
       "js/app.js"
     ],
+    "ttf": [
+      "fonts/RedHatDisplay-Bold.ttf",
+      "fonts/RedHatDisplay-Medium.ttf",
+      "fonts/RedHatDisplay-Regular.ttf",
+      "fonts/RedHatDisplay-SemiBold.ttf"
+    ],
     "dependencies": [
       "jquery"
     ]
