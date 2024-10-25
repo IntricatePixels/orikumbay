@@ -1,6 +1,5 @@
 {
   "app.js": "js/app.js",
-  "app.ttf": "fonts/RedHatDisplay-SemiBold.ttf",
   "editor.js": "js/editor.js",
   "runtime.js": "js/runtime.js",
   "images/explorer/explorer_main.jpg": "images/explorer/explorer_main.jpg",
@@ -15,11 +14,11 @@
   "images/arrow_beige_right.svg": "images/arrow_beige_right.svg",
   "images/arrow_brown_right.svg": "images/arrow_brown_right.svg",
   "images/icon_header_envelope_new.svg": "images/icon_header_envelope_new.svg",
-  "entrypoints.json": "entrypoints.json",
   "hmr.json": "hmr.json",
   "images/icon_menu_right_big.svg": "images/icon_menu_right_big.svg",
   "images/icon_menu_down_big_blue.svg": "images/icon_menu_down_big_blue.svg",
   "images/icon_plus_active.svg": "images/icon_plus_active.svg",
   "images/icon_plus_blue_active.svg": "images/icon_plus_blue_active.svg",
-  "images/icon_plus_regular.svg": "images/icon_plus_regular.svg"
+  "images/icon_plus_regular.svg": "images/icon_plus_regular.svg",
+  "entrypoints.json": "entrypoints.json"
 }
