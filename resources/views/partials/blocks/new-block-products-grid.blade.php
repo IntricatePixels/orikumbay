@@ -30,7 +30,7 @@
                             <div style="cursor: pointer;"
                                 onclick="window.location.href='{{ esc_url($permalink) }}'">
                                 @php echo get_the_post_thumbnail($fpid, 'product-block', ['loading' => 'lazy']) @endphp
-                                <div class="post-card-content py-2">
+                                <div class="text-center py-2">
                                     <p class="prod-grid-title font-bold my-2">{{ esc_html($title) }}</p>
                                     <p>{{ esc_html($excerpt) }}</p>
                                     <div class="btn btn-brown">{{ esc_html($title) }}</div>

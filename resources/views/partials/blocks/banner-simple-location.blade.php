@@ -9,7 +9,7 @@ $video_embed = get_sub_field('video_embed');
 $link = get_sub_field('link');
 
 @endphp
-<section class="banner-simple-location in-page-section vh-100 d-flex align-content-center pb-5 position-relative bg-white" id="banner-simple-@php echo get_row_index() @endphp">
+<section class="banner-simple-location in-page-section vh-100 d-flex align-content-center pb-5 position-relative bg-white px-4" id="banner-simple-@php echo get_row_index() @endphp">
     <div class="container d-flex align-content-center p-5">
         <div class="position-absolute top-0 start-0 w-100 object-fit-cover" style="
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), white 100%), url(<?php echo $background_image; ?>);
@@ -19,8 +19,8 @@ $link = get_sub_field('link');
     position: relative;">
         </div>
 
-        <div class="row" style="margin-top: 350px;">
-            <div class="col-12 col-lg-5 text-center pe-lg-5">
+        <div class="row location-text">
+            <div class="col-12 col-lg-5 text-center pe-lg-5 pb-5">
                 @if ($icon_image)
                 <img src="{{ $icon_image['url'] }}" alt="{{ $icon_image['alt'] }}" class="pb-3" style="width: 80px;">
                 @endif

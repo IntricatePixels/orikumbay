@@ -6,7 +6,7 @@ $video_embed = get_sub_field('video_embed');
 $gallery_images = get_sub_field('gallery'); // ACF Gallery field
 @endphp
 
-<section id="hero-section" class="banner-pillar in-page-section position-relative vh-100 d-flex align-items-center">
+<section id="hero-section" class="hero-banner in-page-section position-relative vh-100 d-flex align-items-center px-4">
     @if ($background_image)
     <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 vh-100 object-fit-cover" id="hero-background" style="border-top-left-radius: 130px;">
     @endif
@@ -39,6 +39,5 @@ $gallery_images = get_sub_field('gallery'); // ACF Gallery field
             backgroundImage.style.display = 'none';
         }
     }
-
 </script>
 @endif

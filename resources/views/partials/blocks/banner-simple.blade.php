@@ -5,7 +5,7 @@
         $video_embed = get_sub_field('video_embed');
         $gallery_images = get_sub_field('gallery'); // ACF Gallery field
     @endphp
-    <section class="banner-simple in-page-section position-relative vh-100 d-flex align-items-end pb-5" id="banner-simple-@php echo get_row_index() @endphp">
+    <section class="banner-simple in-page-section position-relative vh-100 d-flex align-items-end pb-5 px-4" id="banner-simple-@php echo get_row_index() @endphp">
         @if ($background_image)
             <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 object-fit-cover" style="border-bottom-right-radius: 130px; top: -180px !important; height: calc(100vh + 180px) !important">
         @endif
