@@ -2216,7 +2216,7 @@
                         },
                         {
                             "key": "field_65644f3747965",
-                            "label": "Background Image (Left Panel)",
+                            "label": "Background Image",
                             "name": "background_image",
                             "aria-label": "",
                             "type": "image",
@@ -4251,5 +4251,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1729862620
+    "modified": 1730129130
 }

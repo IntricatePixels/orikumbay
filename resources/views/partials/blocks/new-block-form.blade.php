@@ -4,12 +4,11 @@
         $logo_image = get_sub_field('logo_image');
         $gravity_forms_shortcode_us = get_sub_field('gravity_forms_shortcode');
     @endphp
-    <section class="block block-form py-0 in-page-section py-5 d-flex justify-content-center align-items-center" id="form" style="background-color: #81755f;">
+    <section class="block block-form py-0 in-page-section py-5 d-flex justify-content-center align-items-center" id="form" style="background-image: url(<?php echo $background_image; ?>);">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
                 <!-- Left Column -->
-                <div class="col-12 text-center"
-                    style="background-image: url(<?php echo $background_image; ?>); background-size: cover; background-position: center center;">
+                <div class="col-12 text-center">
                     <div>
                     @if ($logo_image)
                         @php
