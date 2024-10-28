@@ -84,6 +84,10 @@ img {
   width: 1px;
 }
 
+.fs-35 {
+  font-size: 3.5rem;
+}
+
 @include media-breakpoint-up(lg) {
   .border-end-custom {
     border-right: 1px solid #81755f; /* Adjust the color and style as needed */

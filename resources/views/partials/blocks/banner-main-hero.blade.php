@@ -8,7 +8,7 @@ $gallery_images = get_sub_field('gallery'); // ACF Gallery field
 
 <section id="hero-section" class="hero-banner in-page-section position-relative vh-100 d-flex align-items-center px-4">
     @if ($background_image)
-    <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 vh-100 object-fit-cover" id="hero-background" style="border-top-left-radius: 130px;">
+        <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 vh-100 object-fit-cover" id="hero-background" style="border-top-left-radius: 130px;">
     @endif
     @if ($gallery_images)
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
@@ -30,7 +30,7 @@ $gallery_images = get_sub_field('gallery'); // ACF Gallery field
         Your browser does not support the video tag.
     </video>
     @endif
-    <h1 class="text-white mb-3 mb-lg-4 position-relative w-100 mx-auto d-flex flex-column" style="max-width: 500px;">{{ the_sub_field('hero_title') }}</h1>
+    <h1 class="fs-35 text-white mb-3 mb-lg-4 position-relative w-100 mx-auto d-flex flex-column" style="max-width: 500px;">{{ the_sub_field('hero_title') }}</h1>
 </section>
 <script>
     function hideBackgroundImage() {
