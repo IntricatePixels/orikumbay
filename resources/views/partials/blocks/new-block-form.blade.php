@@ -4,7 +4,7 @@
         $logo_image = get_sub_field('logo_image');
         $gravity_forms_shortcode_us = get_sub_field('gravity_forms_shortcode');
     @endphp
-    <section class="block block-form py-0 in-page-section py-5 d-flex justify-content-center align-items-center" id="form" style="background-image: url(<?php echo $background_image; ?>);">
+    <section class="block block-form py-0 in-page-section py-5 d-flex justify-content-center align-items-center z-1 position-relative" id="form" style="background-image: url(<?php echo $background_image; ?>);">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
                 <!-- Left Column -->
