@@ -271,7 +271,9 @@ section.block-products-grid .col-lg-4:last-child {
   content: " ";
   width: 1px;
   height: 81%;
-  background: transparent;
+  background-image: url('../../images/vertical_border.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
   display: block;
   position: absolute;
   top: 0;
@@ -424,9 +426,7 @@ a.nav-link h2 {
     color: #6b635e;
   }
 
-  .side-border::after {
-    background: #444444;
-  }
+
 
   .col-md-3.bottom-border:nth-child(-n+4)::before,
   .col-md-4.bottom-border:nth-child(-n+3)::before {
