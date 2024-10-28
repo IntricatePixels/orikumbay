@@ -90,7 +90,19 @@ img {
 
 @include media-breakpoint-up(lg) {
   .border-end-custom {
-    border-right: 1px solid #81755f; /* Adjust the color and style as needed */
+    position: relative;
+  }
+  
+  .border-end-custom::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px; /* Adjust width if necessary */
+    height: 90%;
+    background-image: url('../../images/vertical_border_long.svg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust to fit the SVG's dimensions */
   }
 
   .border-end-custom:last-child {
