@@ -10,10 +10,6 @@ const main = async (err) => {
     // Use jQuery's $(document).ready() function to ensure DOM is fully loaded
     $(document).ready(function () {
 
-        jQuery('#loginLinkButton, .login-panel-link a').on('click', function (e) {
-            $('#mobileNavToggleBtn').addClass('collapsed');
-        });
-
         // Mega Menu Desktop - mega col
         $('#mimeoMegaDropdown .mega-col > a').on('click', function (e) {
             $('ul.sub-menu.depth_2').hide();
