@@ -1,5 +1,5 @@
 @if (get_row_layout() == 'full_width_cta')
-    <section class="full-width-cta-block mb-0" style="background-color:@php the_sub_field('background_colour') @endphp" id="full-width-cta-@php echo get_row_index() @endphp">
+    <section class="full-width-cta-block overflow-hidden mb-0" style="background-color:@php the_sub_field('background_colour') @endphp" id="full-width-cta-@php echo get_row_index() @endphp">
         <div class="container-fluid p-0">
             <div class="row align-items-center">
                 <div
