@@ -1,82 +1,7 @@
-section.section-bg.print-checklist {
-  background-color: $mimeo-blue-light;
-
-  li {
-    img {
-      width: 20px;
-      margin-right: 2rem;
-    }
-  }
-
-  a.btn-outline {
-    color: $mimeo-blue;
-  }
-
-}
-
-section.section-bg.digital-checklist {
-  background-color: $mimeo-purple-light;
-
-  li {
-    img {
-      width: 20px;
-      margin-right: 2rem;
-    }
-  }
-
-  a.btn-outline {
-    color: $mimeo-purple;
-  }
-}
-
-section.section-bg.marketplace-checklist {
-  background-color: $mimeo-green-light;
-
-  a.btn-outline {
-    color: $mimeo-green;
-  }
-}
-
-.checklist h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-h2.customisations-header {
-  font-size: 21px;
-  font-weight: 600;
-}
-
-h3.customisations-header {
-  font-size: 16px;
-  font-weight: 600;
-}
 
 img.col-icon {
   height: 80px;
   width: auto;
-}
-
-img.ways-icon {
-  height: 50px;
-  width: auto;
-}
-
-.way-wrapper {
-  border-bottom: 1px solid #bfbfbf;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-
-  &:last-of-type {
-    border-bottom: unset;
-    padding-bottom: unset;
-    margin-bottom: unset;
-  }
-}
-
-.full-width-cta-block {
-  overflow: hidden;
 }
 
 img.object-fit {
@@ -89,84 +14,10 @@ img.object-fit {
   margin: auto;
 }
 
-.checklist p {
-  font-size: 16px;
-}
-
-// clean up and syndicate sass
-ul.steps h3 {
-  font-size: 1.375rem;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-// end
-
-.center-cross:first-child {
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.center-cross:nth-child(2) {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.center-cross:nth-child(3) {
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.testimonial-text p {
-  font-size: 1.5625rem;
-  line-height: 1.875rem;
-  font-weight: 700;
-}
-
 img.three-col-icon {
   width: auto;
   min-height: 80px;
   max-width: 80px;
-}
-
-.block.new img.three-col-icon {
-  width: auto;
-  min-height: 32px;
-  max-width: 32px;
-}
-
-.block.new .block-subheader {
-  max-width: 460px;
-}
-
-img.values-icon {
-  height: auto;
-  width: 60px;
-}
-
-img.customisation-icon {
-  height: 60px;
-  width: 60px;
-}
-
-.order-steps img.values-icon {
-  height: 80px;
-  width: auto;
-}
-
-img.prevArrowBtn {
-  height: 20px;
-  width: auto;
-}
-
-img.qt-logo {
-  height: 30px;
-  width: auto;
-}
-
-a.standard {
-  color: $brown;
-  text-decoration: underline;
-  font-weight: 600;
 }
 
 img.col-block {
@@ -176,30 +27,6 @@ img.col-block {
 
 section.gradient-corp {
   background-color: transparent;
-}
-
-section.gradient-school {
-  background-image: linear-gradient(90deg, #fabc2e, #f38f29, #f1692a);
-}
-
-section.gradient-photos {
-  background-image: linear-gradient(90deg, #f7c717, #e57028, #c73586, #72488a, #00a1d5, #79b53c);
-}
-
-.mimeo-schools .hero-banner.large-banner .hero-text {
-  background-image: linear-gradient(90deg, #fabc2e, #f38f29, #f1692a);
-}
-
-.mimeo-schools .header-top-icons {
-  justify-content: end !important;
-}
-
-.bluebg {
-  background-color: #f4f8fa;
-}
-
-.whitebox-wrapper {
-  background-color: white;
 }
 
 section.block-in-numbers,
@@ -282,138 +109,7 @@ section.block-products-grid .col-lg-4:last-child {
   margin: auto;
 }
 
-ul.checklist li {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-ul.checklist li img {
-  width: 20px;
-  margin-right: 10px;
-}
-
-ul.steps li {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-section.block-threecolumns-icons h3 {
-  word-wrap: break-word;
-  text-align: center;
-  margin: 0 auto 1rem;
-}
-
-ul.customisations {
-  padding: 0;
-
-  li {
-    border-top: 1px solid #dee2e6;
-
-    h3 {
-      font-size: $font-size-normal;
-      min-width: 125px;
-      margin-right: 10px;
-      margin-bottom: 0;
-    }
-
-    p {
-      font-size: $font-size-normal;
-      margin-bottom: 0;
-    }
-  }
-}
-
-ul.customisations:last-child {
-  border-bottom: 1px solid #dee2e6;
-}
-
-ul.steps li:last-of-type {
-  border-bottom: 1px solid transparent;
-}
-
-ul.checklist li:last-of-type {
-  margin-bottom: 10px;
-}
-
-ul.checklist li i {
-  margin-top: 5px;
-  margin-right: 12px;
-}
-
-.card-content-wrapper.edge-card::after {
-  background: transparent;
-}
-
-.whitebox-wrapper.whitebox-dazzle {
-  border: 1px solid rgb(189 194 199 / 44%);
-  border-radius: 4px;
-
-  h3 {
-    font-size: 2rem;
-  }
-}
-
-.values-content {
-  max-width: 300px;
-}
-
-.block-checkmarklist .checkmark-left-panel p {
-  font-size: 18px;
-}
-
-.block-checkmarklist .learn-more-btn {
-  display: inline-block;
-  border: 1px solid;
-  border-radius: 0;
-  font-size: 20px;
-  padding: 10px 20px;
-  min-width: 180px;
-}
-
-section.block-tabside h2 {
-  padding: 0.5rem 0;
-}
-
-section.block-tabside .nav-tabs a {
-  padding: 5px 0;
-}
-
-section.block-tabside .nav-tabs a:hover {
-  box-shadow: none;
-  border-color: transparent;
-}
-
-a.nav-link h2 {
-  font-size: 1.25rem;
-  text-align: left;
-  margin: 0;
-  padding: 10px 20px;
-}
-
-.print-tab.tab-pane h2,
-.marketplace-tab.tab-pane h2,
-.digital-tab.tab-pane h2 {
-  font-size: 1.063rem;
-}
-
 @include media-breakpoint-up(md) {
-  .testimonial-text p {
-    font-size: 2rem;
-    line-height: normal;
-  }
-
-  .center-cross:first-child {
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .center-cross:nth-child(2) {
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  .center-cross:nth-child(3) {
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid transparent;
-  }
 
   .border-col > .col-md-4,
   .border-col > .col-md-3 {
@@ -425,8 +121,6 @@ a.nav-link h2 {
     font-size: 1.875rem;
     color: #6b635e;
   }
-
-
 
   .col-md-3.bottom-border:nth-child(-n+4)::before,
   .col-md-4.bottom-border:nth-child(-n+3)::before {
@@ -441,37 +135,6 @@ a.nav-link h2 {
   }
 }
 
-body.print-plus .btn-brown-gradient {
-  background: #007ab7;
-}
-
-body.mimeo-digital .btn-brown-gradient {
-  background: #59397a;
-}
-
-.btn-brown-gradient.btn-mimeo-print {
-  background: #2f8cca;
-}
-
-.btn-brown-gradient.btn-mimeo-marketplace {
-  background: #5ea361;
-}
-
-.btn-brown-gradient.btn-mimeo-digital {
-  background: #824c9e;
-}
-
-.btn-brown-gradient.btn-mimeo-schools {
-  background: #f38f29;
-}
-
-.btn-brown-gradient.btn-corporate {
-  background: #007ab7;
-}
-
-.block.new.block-threecolumns-icons .btn-brown-gradient {
-  margin-top: 10px;
-}
 
 @include media-breakpoint-up(lg) {
   img.object-fit {
@@ -506,11 +169,4 @@ body.mimeo-digital .btn-brown-gradient {
     font-size: 2.25rem;
     color: #6b635e;
   }
-}
-
-form#searchpage-form {
-  border: 1px solid #e0e0e0;
-  max-width: 450px;
-  margin: 0 auto;
-  background: #e0e0e0c9;
 }
