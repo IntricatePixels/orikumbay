@@ -5,18 +5,13 @@
     $size = 'full';
     $link = get_sub_field('link');
 @endphp
-<section class="banner-simple-stacked in-page-section vh-100 d-flex align-items-end position-relative bg-white px-4" id="banner-simple-@php echo get_row_index() @endphp">
-    <div class="position-absolute top-0 start-0 w-100 object-fit-cover" style="
+<section class="banner-simple-stacked px-4 py-5" id="banner-simple-stacked-@php echo get_row_index() @endphp" style="
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), white 100%), url(<?php echo $background_image; ?>);
-        background-size: cover;
-        background-position: top center;
-        height: 300px; /* Adjust the height as needed */
-        position: relative;">
-    </div>
-
-    <div class="container p-5">
-        <div class="row z-1 max-width-600 mx-auto">
-            <div class="col-12 text-center" style="z-index: inherit;">
+        background-size: contain;
+        background-repeat: no-repeat;">
+    <div class="container p-5 max-width-600">
+        <div class="row pt-5">
+            <div class="col-12 pt-5">
                 @if ($image)
                     <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}">
                 @endif
