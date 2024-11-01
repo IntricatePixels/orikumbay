@@ -2,7 +2,7 @@
 <section id="location-distances" class="location-section py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 pb-5 pb-lg-0">
                 <div class="location-details d-flex d-md-block flex-wrap justify-content-center">
                     @if (have_rows('numbers'))
                     @while (have_rows('numbers'))
