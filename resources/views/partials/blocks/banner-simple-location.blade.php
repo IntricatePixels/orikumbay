@@ -33,7 +33,7 @@ $link = get_sub_field('link');
                       </a>
                   @endif
             </div>
-            <div class="col-12 col-lg-6 d-grid gap-2" style="grid-template-columns: repeat(2, 1fr);">
+            <div class="col-12 col-lg-6 d-grid gap-4" style="grid-template-columns: repeat(2, 1fr);">
                 @if ($right_side_image_1)
                 <img src="{{ $right_side_image_1['url'] }}" alt="{{ $right_side_image_1['alt'] }}" class="img-fluid">
                 @endif

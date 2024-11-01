@@ -6,6 +6,7 @@
         @include('partials/blocks/banner-simple')
         @include('partials/blocks/banner-simple-location')
         @include('partials/blocks/banner-simple-stacked')
+        @include('partials/blocks/in-numbers-location')
         @include('partials/blocks/new-block-three-columns-icon')
         @include('partials/blocks/new-block-in-numbers')
         @include('partials/blocks/new-block-cta-full-bg-image')
