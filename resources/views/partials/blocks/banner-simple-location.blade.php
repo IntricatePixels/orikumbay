@@ -13,7 +13,8 @@ $link = get_sub_field('link');
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), white 100%), url(<?php echo $background_image; ?>);
         background-size: contain;
         background-repeat: no-repeat;">
-        <div class="row location-text">
+    <div class="container">
+        <div class="row {{ !empty($background_image) ? 'location-text' : '' }}">
             <div class="col-12 col-lg-5 text-center pe-lg-5 pb-5">
                 @if ($icon_image)
                 <img src="{{ $icon_image['url'] }}" alt="{{ $icon_image['alt'] }}" class="pb-3" style="width: 80px;">
@@ -40,9 +41,8 @@ $link = get_sub_field('link');
                 <img src="{{ $right_side_image_2['url'] }}" alt="{{ $right_side_image_2['alt'] }}" class="img-fluid">
                 @endif
             </div>
-
         </div>
-        
+        </div>
     </div>
 
 </section>
