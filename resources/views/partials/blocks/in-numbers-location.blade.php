@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="location-details d-flex flex-wrap justify-content-center">
+                <div class="location-details d-flex d-md-block flex-wrap justify-content-center">
                     @if (have_rows('numbers'))
                     @while (have_rows('numbers'))
                     @php the_row() @endphp
