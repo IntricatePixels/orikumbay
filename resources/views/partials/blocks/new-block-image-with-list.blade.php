@@ -14,7 +14,7 @@
             <div class="pb-lg-5">
                 <h2 class="hero-eyebrow text-sm-start text-md-center mb-3">{{ the_sub_field('header_eyebrow') }}</h2>
                 <h3 class="fs-1 font-black mb-3 pt-0 mt-0">{!! $header !!}</h3>
-                <div>{!! the_sub_field('subhead') !!}</div>
+                <div class="max-width-600 mx-auto">{!! the_sub_field('subhead') !!}</div>
             </div>
           @endif
           </div>
