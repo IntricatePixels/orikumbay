@@ -670,6 +670,26 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_6728e3c32fca8",
+                            "label": "Rounded Corner?",
+                            "name": "rounded_corner",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -4411,5 +4431,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730732229
+    "modified": 1730733031
 }
