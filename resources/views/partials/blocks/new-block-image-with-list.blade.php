@@ -5,13 +5,14 @@
       $gallery = get_sub_field('image_gallery');
       $swap_sides = get_sub_field('swap_sides');
       $icon_image = get_sub_field('icon_image');
+      $rounded_corner = get_sub_field('rounded_corner');
     @endphp
     
-    <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
+    <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section @if ( $rounded_corner ) rounded-corner-bottom @endif" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
           @if ($header)
-          <div class="row justify-content-lg-center text-md-center mb-5 mb-lg-0 pb-5">
-            <div class="pb-lg-5">
+            <div class="row justify-content-lg-center text-md-center mb-5 mb-lg-0 pb-5">
+              <div class="pb-lg-5">
                 <h2 class="hero-eyebrow text-sm-start text-md-center mb-3">{{ the_sub_field('header_eyebrow') }}</h2>
                 <h3 class="fs-1 font-black mb-3 pt-0 mt-0">{!! $header !!}</h3>
                 <div class="max-width-600 mx-auto">{!! the_sub_field('subhead') !!}</div>

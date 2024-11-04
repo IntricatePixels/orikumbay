@@ -52,6 +52,10 @@ img {
   width: 100%;
 }
 
+.rounded-corner-bottom {
+  border-bottom-right-radius: 130px;
+}
+
 .desktop-break {
   @include media-breakpoint-up(lg) {
     display: block;

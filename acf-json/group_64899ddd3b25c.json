@@ -2929,7 +2929,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "25",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -2949,7 +2949,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "25",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -2969,13 +2969,13 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "25",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
                             "maxlength": "",
-                            "rows": 4,
+                            "rows": 8,
                             "placeholder": "",
                             "new_lines": ""
                         },
@@ -3411,6 +3411,26 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_6728e0a48e400",
+                            "label": "Rounded Corner?",
+                            "name": "rounded_corner",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -4391,5 +4411,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730452632
+    "modified": 1730732229
 }
