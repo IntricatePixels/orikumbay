@@ -42,10 +42,9 @@ $link = get_sub_field('link');
                 @endif
             </div>
         </div>
-        </div>
     </div>
-
 </section>
+
 <script>
     function hideBackgroundImage() {
         var backgroundImage = document.getElementById('hero-background');
@@ -53,6 +52,6 @@ $link = get_sub_field('link');
             backgroundImage.style.display = 'none';
         }
     }
-
 </script>
+
 @endif
