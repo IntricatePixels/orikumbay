@@ -39,7 +39,7 @@
                             <img width="180" height="20" src="{{ esc_url($icon_image['url']) }}" alt="{{ esc_attr($icon_image['alt']) }}" loading="lazy" style="width: 100px; height: 100px;" />
                           @endif
                           @if ($title)
-                            <h2 class="pt-2 mb-2 fs-5 font-bold mb-2 text-white">{{ $title }}</h4>
+                            <h2 class="pt-2 mb-2 fs-5 font-bold mb-2 text-white">{!! $title !!}</h4>
                           @endif
                           @if ($link)
                               @php
