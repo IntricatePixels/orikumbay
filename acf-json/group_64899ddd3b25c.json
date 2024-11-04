@@ -3847,10 +3847,10 @@
                                 },
                                 {
                                     "key": "field_65ddcaad94519",
-                                    "label": "Icon Code - Font Awesome i.e. fa-pen",
-                                    "name": "icon_code",
+                                    "label": "Icon Image",
+                                    "name": "icon_image",
                                     "aria-label": "",
-                                    "type": "text",
+                                    "type": "image",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -3859,11 +3859,16 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "fa-pen",
-                                    "maxlength": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
                                     "parent_repeater": "field_65ddc7b25f3d2"
                                 }
                             ]
@@ -4431,5 +4436,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1730733031
+    "modified": 1730739574
 }
