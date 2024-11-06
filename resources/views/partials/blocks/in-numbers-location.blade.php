@@ -2,7 +2,7 @@
 <section id="location-distances" class="location-section py-5">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 pb-5 pb-lg-0">
+            <div class="col-12 col-lg-4 pb-5 pb-lg-0">
                 <div class="location-details d-flex d-md-block flex-wrap justify-content-center">
                     @if (have_rows('numbers'))
                     @while (have_rows('numbers'))
@@ -19,7 +19,7 @@
                     @endif
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-8">
                 <div class="location-map">
                     <img src="@php the_sub_field('image') @endphp" alt="Map Image" class="img-fluid">
                 </div>
