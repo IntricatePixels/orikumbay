@@ -5,7 +5,7 @@
   </div>
     <div class="offcanvas-body d-flex flex-column p-3">
     EN | AL
-        <div class="flex-fill">
+        <div class="flex-fill pt-5">
             @if (has_nav_menu('primary_navigation'))
                 {!! wp_nav_menu([
                     'theme_location' => 'primary_navigation',

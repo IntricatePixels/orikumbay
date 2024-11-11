@@ -60,7 +60,7 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 
       // Add py-3 class if depth is zero
       if ($depth === 0) {
-          $depth_class_names .= ' p-3';
+          $depth_class_names .= ' fs-2 p-3';
       }
 
       // Build HTML
