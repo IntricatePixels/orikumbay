@@ -4,6 +4,7 @@
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
     <div class="offcanvas-body d-flex flex-column p-3">
+    EN | AL
         <div class="flex-fill">
             @if (has_nav_menu('primary_navigation'))
                 {!! wp_nav_menu([
