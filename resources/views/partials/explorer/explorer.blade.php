@@ -42,9 +42,8 @@
                     <img src="@asset('images/explorer/orikum_bay_explorer_main_image.jpg')" usemap="#image-map" class="map" id="mainExplorerImage">
 
                     <map name="image-map">
-                        <area target="" alt="Left" title="Left" href="#leftModalWindow" coords="18,454,31,479,75,527,118,567,153,592,193,616,239,638,327,646,379,640,396,635,381,613,374,591,392,578,414,570,457,557,503,541,581,508,637,483,695,443,734,414,773,398,837,390,858,390,846,362,832,327,826,290,821,257,804,230,784,212,754,182,742,153,730,131,713,123,676,139,613,187,595,206,552,225,511,250,460,274,400,306,139,401,86,416,31,441" shape="poly">
-                        <area target="" alt="Middle" title="Middle" href="#centerModalWindow" coords="723,115,748,158,774,196,791,217,823,255,828,281,832,309,842,341,855,364,863,384,886,391,896,410,923,424,963,434,1007,446,1039,454,1076,472,1104,489,1138,507,1162,524,1192,529,1254,529,1316,529,1330,512,1259,483,1216,459,1201,432,1238,378,1278,335,1354,262,1430,184,1510,87,1503,71,1486,66,1390,63,1332,64,1271,69,1130,79,1072,85,996,87,942,88,826,93,753,106" shape="poly">
-                        <area target="" alt="Right" title="Right" href="#rightModalWindow" coords="1333,515,1370,500,1405,499,1464,516,1516,530,1546,542,1575,548,1608,529,1688,472,1753,430,1780,411,1791,387,1686,343,1619,311,1680,255,1670,215,1600,192,1556,214,1526,238,1462,198,1492,163,1443,219,1398,256,1373,276,1352,300,1328,322,1311,345,1292,369,1278,378,1251,408,1239,424,1243,451,1255,467,1289,491" shape="poly">
+                        <area target="" alt="Left Side Building" title="Left Side Building" href="#leftSideBuilding" coords="51,551,55,189,69,186,520,189,548,194,570,239,566,301,585,331,584,350,614,356,626,383,625,448,643,455,655,467,652,499,689,503,688,551" shape="poly">
+                        <area target="" alt="Right Side Building" title="Right Side Building" href="#leftSideBuilding" coords="742,551,742,502,775,500,774,449,782,448,775,397,787,397,786,346,802,342,804,289,818,286,816,166,1345,72,1368,75,1384,76,1475,131,1471,552" shape="poly">
                     </map>
                 </div>
             </div>
@@ -53,7 +52,7 @@
 </section>
 
 <!-- Fullscreen Modals -->
-@foreach(['left' => 1420, 'center' => 1418, 'right' => 1357] as $side => $id)
+@foreach(['left' => 2926, 'right' => 2577] as $side => $id)
     @php
         $idExists = does_drawattention_id_exist($id);
     @endphp
@@ -87,7 +86,6 @@
 
         // Attach click handlers
         $('area[href="#leftModalWindow"]').on('click', function(event) { handleAreaClick(event, '#leftModalWindow'); });
-        $('area[href="#centerModalWindow"]').on('click', function(event) { handleAreaClick(event, '#centerModalWindow'); });
         $('area[href="#rightModalWindow"]').on('click', function(event) { handleAreaClick(event, '#rightModalWindow'); });
 
         // Initialize Maphilight plugin
