@@ -42,8 +42,8 @@
                     <img src="@asset('images/explorer/orikum_bay_explorer_main_image.jpg')" usemap="#image-map" class="map" id="mainExplorerImage">
 
                     <map name="image-map">
-                        <area target="" alt="Left Side Building" title="Left Side Building" href="#leftSideBuilding" coords="51,551,55,189,69,186,520,189,548,194,570,239,566,301,585,331,584,350,614,356,626,383,625,448,643,455,655,467,652,499,689,503,688,551" shape="poly">
-                        <area target="" alt="Right Side Building" title="Right Side Building" href="#leftSideBuilding" coords="742,551,742,502,775,500,774,449,782,448,775,397,787,397,786,346,802,342,804,289,818,286,816,166,1345,72,1368,75,1384,76,1475,131,1471,552" shape="poly">
+                        <area target="" alt="Left Side Building" title="Left Side Building" href="#leftModalWindow" coords="51,551,55,189,69,186,520,189,548,194,570,239,566,301,585,331,584,350,614,356,626,383,625,448,643,455,655,467,652,499,689,503,688,551" shape="poly">
+                        <area target="" alt="Right Side Building" title="Right Side Building" href="#rightModalWindow" coords="742,551,742,502,775,500,774,449,782,448,775,397,787,397,786,346,802,342,804,289,818,286,816,166,1345,72,1368,75,1384,76,1475,131,1471,552" shape="poly">
                     </map>
                 </div>
             </div>
