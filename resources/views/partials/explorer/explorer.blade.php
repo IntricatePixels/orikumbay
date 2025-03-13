@@ -52,17 +52,14 @@
 </section>
 
 <!-- Fullscreen Modals -->
-@foreach(['left' => 2926, 'right' => 2577] as $side => $id)
+@foreach(['left' => 2414, 'right' => 2577] as $side => $id)
     @php
         $idExists = does_drawattention_id_exist($id);
     @endphp
     <div class="modal fade" id="{{ $side }}ModalWindow" tabindex="-1" aria-labelledby="{{ $side }}ModalWindowLabel" aria-hidden="true" style="background-color: #004a98;">
         <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: linear-gradient(to right, #0b3ed9, #4e81d6, #86c6f4);">
-                <div class="modal-header">
-                    <h5 class="modal-title w-100 text-white text-start fs-2 fw-bold" id="staticBackdropLabel">Explore Orikum Bay</h5>
-                    <button type="button" class="btn-close btn-close-white m-5 fs-1" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+            <div class="modal-content" style="background:#4e81d6">
+                <button type="button" class="btn-close btn-close-white m-5 fs-1 position-absolute z-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     @if ($idExists && shortcode_exists('drawattention'))
                         {!! do_shortcode("[drawattention ID=$id]") !!}
