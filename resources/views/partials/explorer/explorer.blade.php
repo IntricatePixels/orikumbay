@@ -52,7 +52,7 @@
 </section>
 
 <!-- Fullscreen Modals -->
-@foreach(['left' => 2926, 'right' => 2577] as $side => $id)
+@foreach(['left' => 2414, 'right' => 2415] as $side => $id)
     @php
         $idExists = does_drawattention_id_exist($id);
     @endphp
