@@ -26,7 +26,7 @@
                 <h2 class="mb-3 pt-0 mt-0 font-black text-center">{{ the_sub_field('header') }}</h2>
                 <div class="text-center mb-5 py-3 max-width-600 mx-auto">{{ the_sub_field('subhead') }}</div>
             </div>
-            <div class="row gx-5 gy-4">
+            <div class="d-flex flex-row flex-wrap justify-content-center gap-4">
                 @if (have_rows('grid'))
                     @while (have_rows('grid'))
                         @php
