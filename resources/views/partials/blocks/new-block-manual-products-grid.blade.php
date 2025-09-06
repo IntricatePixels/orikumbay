@@ -32,12 +32,15 @@
                                 <!-- Left: Image -->
                                 @if ($image)
                                     <div class="flex-shrink-0 w-100 w-md-auto" style="width: 260px;">
+                                        <div class="floorplan">
+
                                         <img
                                             src="{{ esc_url($image['url']) }}"
                                             alt="{{ esc_attr($image['alt']) }}"
                                             class="img-fluid d-block"
                                             loading="lazy"
                                         />
+                                        </div>
                                     </div>
                                 @endif>
 
@@ -72,3 +75,14 @@
         </div>
     </section>
 @endif
+
+<style>
+
+    .floorplan img {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+</style>
