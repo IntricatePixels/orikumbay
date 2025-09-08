@@ -123,9 +123,6 @@ if (function_exists('acf_add_options_page')) {
   }
   add_action('after_setup_theme', 'register_navwalker');
   
-  
-  
-
   /**
   * Enable WebP preview in WordPress media library.
   */
@@ -192,3 +189,34 @@ function does_drawattention_id_exist($id) {
   $post_exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->posts} WHERE ID = %d AND post_type = 'da_image'", $id));
   return $post_exists > 0;
 }
+
+function casa_register_sidebars() {
+    register_sidebar([
+        'name' => 'Footer Column 1',
+        'id' => 'footer-1',
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="footer-title">',
+        'after_title'   => '</h4>',
+    ]);
+
+    register_sidebar([
+        'name' => 'Footer Column 2',
+        'id' => 'footer-2',
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="footer-title">',
+        'after_title'   => '</h4>',
+    ]);
+
+    register_sidebar([
+        'name' => 'Footer Column 3',
+        'id' => 'footer-3',
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="footer-title">',
+        'after_title'   => '</h4>',
+    ]);
+}
+add_action('widgets_init', 'casa_register_sidebars');
+
