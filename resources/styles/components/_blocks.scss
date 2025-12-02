@@ -5,6 +5,7 @@
 .offcanvas.show:not(.hiding), 
 .offcanvas.showing {
   width: 60%;
+  max-width: 460px;
 }
 
 .location-text {

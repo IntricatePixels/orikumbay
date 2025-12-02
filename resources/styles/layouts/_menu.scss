@@ -6,3 +6,33 @@
     height: 2.5em;
   }
 }
+
+// Horizontal menu on desktop
+@include media-breakpoint-up(lg) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 0 0.5rem !important;
+    font-size: 1rem !important;
+  }
+
+  // Contact icons to match menu item color
+  .contact-icons a i {
+    color: inherit;
+    font-size: 1.25rem;
+  }
+
+  .contact-icons a {
+    color: #000;
+  }
+}
