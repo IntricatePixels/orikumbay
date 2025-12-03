@@ -46,10 +46,26 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <!-- Navigation menu content here -->
+        @if (has_nav_menu('primary_navigation'))
+        {!! wp_nav_menu([
+            'theme_location' => 'primary_navigation',
+            'menu_class' => 'navbar-nav d-flex flex-column',
+            'echo' => false,
+            'walker' => new Mobile_Nav_Walker(),
+            'container_class' => 'offcanvas-nav-menu',
+            'link_before' => '<span style="font-size: 1rem;">',
+            'link_after' => '</span>',
+        ]) !!}
+        @endif
     </div>
     <div class="offcanvas-footer border-top p-3">
         <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:info@brunesconstruction.al" class="text-decoration-none">
+                info@brunesconstruction.al
+            </a>
+        </div>
+        <div class="d-flex align-items-center gap-2 mt-2">
             <i class="bi bi-telephone"></i>
             <a href="tel:+35569601580" class="text-decoration-none">
                 +35569 6015802
@@ -57,3 +73,33 @@
         </div>
     </div>
 </div>
+
+<style>
+    .offcanvas-nav-menu .nav-link {
+        padding: 0.25rem 0 !important;
+    }
+    
+    .navbar-nav .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #6b645e;
+        transition: width 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        color: #6b645e !important;
+    }
+    
+    .navbar-nav .nav-link:hover::after {
+        width: 100%;
+    }
+</style>
