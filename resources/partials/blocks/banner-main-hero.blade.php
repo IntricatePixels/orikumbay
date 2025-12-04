@@ -3,10 +3,10 @@
 $background_image = get_sub_field('background_image');
 $size = 'full';
 $video_embed = get_sub_field('video_embed');
-$gallery_images = get_sub_field('gallery'); // ACF Gallery field
+$gallery_images = get_sub_field('gallery');
 @endphp
 
-<section data-animate="fade-in" id="hero-section" class="hero-banner in-page-section position-relative vh-100 overflow-hidden d-flex align-items-center px-4">
+<section id="hero-section" class="hero-banner in-page-section position-relative vh-80 overflow-hidden d-flex align-items-center px-4">
     @if ($background_image)
         <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 vh-100 object-fit-cover" id="hero-background" style="border-top-left-radius: 130px;">
     @endif
@@ -30,14 +30,7 @@ $gallery_images = get_sub_field('gallery'); // ACF Gallery field
         Your browser does not support the video tag.
     </video>
     @endif
-    <h1 class="fs-35 text-center text-white mb-3 mb-lg-4 position-relative w-100 mx-auto d-flex flex-column" style="max-width: 500px;">{{ the_sub_field('hero_title') }}</h1>
+    <h1 class="fs-35 text-center text-white mb-3 mb-lg-4 position-relative w-100 mx-auto d-flex flex-column" data-animate="fade-in" style="max-width: 500px;">{{ the_sub_field('hero_title') }}</h1>
 </section>
-<script>
-    function hideBackgroundImage() {
-        var backgroundImage = document.getElementById('hero-background');
-        if (backgroundImage) {
-            backgroundImage.style.display = 'none';
-        }
-    }
-</script>
+
 @endif

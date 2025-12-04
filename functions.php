@@ -220,3 +220,9 @@ function casa_register_sidebars() {
 }
 add_action('widgets_init', 'casa_register_sidebars');
 
+// Enqueue scroll animations
+add_action('wp_enqueue_scripts', function() {
+    wp_enqueue_style('scroll-animations', get_template_directory_uri() . '/resources/css/scroll-animations.css', [], '1.0', 'all');
+    wp_enqueue_script('scroll-animations', get_template_directory_uri() . '/resources/js/scroll-animations.js', [], '1.0', true);
+});
+

@@ -102,4 +102,76 @@
     .navbar-nav .nav-link:hover::after {
         width: 100%;
     }
+
+    /* Scroll Animations */
+    [data-animate="fade-in"] {
+        opacity: 0;
+        transition: opacity 1.2s ease-out;
+    }
+    [data-animate="fade-in"].animate-in {
+        opacity: 1;
+    }
+    [data-animate="slide-up"] {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+    [data-animate="slide-up"].animate-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    [data-animate="scale"] {
+        opacity: 0;
+        transform: scale(0.7);
+        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    }
+    [data-animate="scale"].animate-in {
+        opacity: 1;
+        transform: scale(1);
+    }
+    [data-animate][data-delay="1"] { transition-delay: 0.15s; }
+    [data-animate][data-delay="2"] { transition-delay: 0.3s; }
+    [data-animate][data-delay="3"] { transition-delay: 0.45s; }
+    [data-animate][data-delay="4"] { transition-delay: 0.6s; }
+    [data-parallax] { will-change: transform; }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Scroll animations initialized');
+    
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log('Animating in:', entry.target);
+                entry.target.classList.add('animate-in');
+            } else {
+                console.log('Animating out:', entry.target);
+                entry.target.classList.remove('animate-in');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-animate]').forEach(el => {
+        observer.observe(el);
+    });
+
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('[data-parallax]').forEach(el => {
+            const scrollPosition = window.scrollY;
+            const elementOffset = el.offsetTop;
+            const distance = scrollPosition - elementOffset;
+            const parallaxSpeed = el.getAttribute('data-parallax') || 0.5;
+            
+            if (distance > -window.innerHeight && distance < window.innerHeight) {
+                el.style.transform = `translateY(${distance * parallaxSpeed}px)`;
+            }
+        });
+    });
+});
+</script>

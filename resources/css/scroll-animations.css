@@ -1,0 +1,79 @@
+/* Fade In Animation */
+[data-animate="fade-in"] {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+
+[data-animate="fade-in"].animate-in {
+    opacity: 1;
+}
+
+/* Slide Up Animation */
+[data-animate="slide-up"] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-animate="slide-up"].animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide Left Animation */
+[data-animate="slide-left"] {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-animate="slide-left"].animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide Right Animation */
+[data-animate="slide-right"] {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-animate="slide-right"].animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scale Animation */
+[data-animate="scale"] {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-animate="scale"].animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger delay for multiple elements */
+[data-animate][data-delay="1"] {
+    transition-delay: 0.1s;
+}
+
+[data-animate][data-delay="2"] {
+    transition-delay: 0.2s;
+}
+
+[data-animate][data-delay="3"] {
+    transition-delay: 0.3s;
+}
+
+[data-animate][data-delay="4"] {
+    transition-delay: 0.4s;
+}
+
+/* Parallax container */
+[data-parallax] {
+    will-change: transform;
+}

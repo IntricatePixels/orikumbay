@@ -1,5 +1,5 @@
 @if (get_row_layout() == 'location_distances')
-<section id="location-distances" class="location-section py-5">
+<section id="location-distances" data-animate="slide-up" class="location-section py-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-4 pb-5 pb-lg-0">
