@@ -7,7 +7,7 @@
                     @if (has_custom_logo())
                         {!! get_custom_logo() !!}
                     @else
-                        <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}" style="height: 80px; width: auto;">
+                        <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}" style="height: 50px; width: auto;">
                     @endif
                 </div>
                 <div class="social-icons d-flex gap-3">
