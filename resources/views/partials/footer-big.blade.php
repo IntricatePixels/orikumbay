@@ -5,9 +5,11 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                 <div class="footer-logo mb-4">
                     @if (has_custom_logo())
-                        {!! get_custom_logo() !!}
+                        <div style="max-width: 150px;">
+                            {!! get_custom_logo() !!}
+                        </div>
                     @else
-                        <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}" style="max-height: 80px;">
+                        <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}" style="max-height: 60px;">
                     @endif
                 </div>
                 <div class="social-icons d-flex gap-3">
