@@ -6,7 +6,7 @@
 
 @endphp
 
-    <section class="block block-big-cta p-5 px-4 mb-0" id="blockBigCTA-@php echo get_row_index() @endphp">
+    <section data-animate="fade-in" class="block block-big-cta p-5 px-4 mb-0" id="blockBigCTA-@php echo get_row_index() @endphp">
         <div class="container">
             
             @if ($choose_layout)

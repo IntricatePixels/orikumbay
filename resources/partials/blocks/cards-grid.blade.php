@@ -5,7 +5,7 @@
         <div class="row g-4">
             @php $delay = 1; @endphp
             @foreach (get_sub_field('cards') as $card)
-            <div class="col-md-6 col-lg-4" data-animate="scale" data-delay="{{ $delay }}">
+            <div class="col-md-6 col-lg-4" data-animate="slide-up" data-delay="{{ $delay }}">
                 <div class="card h-100 shadow-sm">
                     @if ($card['image'])
                     <img src="{{ $card['image']['url'] }}" alt="{{ $card['image']['alt'] }}" class="card-img-top">

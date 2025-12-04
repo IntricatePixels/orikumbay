@@ -132,15 +132,6 @@
         opacity: 1;
         transform: translateY(0);
     }
-    [data-animate="scale"] {
-        opacity: 0;
-        transform: scale(0.7);
-        transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-    }
-    [data-animate="scale"].animate-in {
-        opacity: 1;
-        transform: scale(1);
-    }
     [data-animate][data-delay="1"] { transition-delay: 0.15s; }
     [data-animate][data-delay="2"] { transition-delay: 0.3s; }
     [data-animate][data-delay="3"] { transition-delay: 0.45s; }

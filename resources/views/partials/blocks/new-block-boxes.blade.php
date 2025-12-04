@@ -8,7 +8,7 @@
 
     @endphp
 
-    <section class="block-boxes in-page-section px-lg-4 px-4 px-md-0 pb-5 mb-5 in-page-section"
+    <section data-animate="slide-up" class="block-boxes in-page-section px-lg-4 px-4 px-md-0 pb-5 mb-5 in-page-section"
         id="list-{{ get_row_index() }}" data-section-name="">
         <div class="container">
             <div class="row">

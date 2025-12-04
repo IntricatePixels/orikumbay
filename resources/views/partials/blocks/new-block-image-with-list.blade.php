@@ -8,7 +8,7 @@
   $rounded_corner = get_sub_field('rounded_corner');
   @endphp
 
-  <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section @if ( $rounded_corner ) rounded-corner-bottom @endif" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
+  <section data-animate="slide-up" class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section @if ( $rounded_corner ) rounded-corner-bottom @endif" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
       <div class="container">
           @if ($header)
           <div class="row justify-content-lg-center text-md-center mb-5 mb-lg-0 pb-5">

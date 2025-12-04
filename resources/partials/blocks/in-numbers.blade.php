@@ -4,7 +4,7 @@
         <div class="row">
             @php $delay = 1; @endphp
             @foreach (get_sub_field('numbers') as $item)
-            <div class="col-md-6 col-lg-3 mb-4" data-animate="scale" data-delay="{{ $delay }}">
+            <div class="col-md-6 col-lg-3 mb-4" data-animate="slide-up" data-delay="{{ $delay }}">
                 <div class="number-block text-center">
                     <div class="number" style="font-size: 2.5rem; font-weight: bold;">
                         {{ $item['number'] }}

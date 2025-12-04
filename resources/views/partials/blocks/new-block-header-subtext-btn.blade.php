@@ -1,5 +1,5 @@
 @if (get_row_layout() == 'header_subtext')
-    <section id="header-{{ get_row_index() }}" class="block block-header-subtext py-5 @php the_sub_field('bgcolor') @endphp">
+    <section data-animate="slide-up" id="header-{{ get_row_index() }}" class="block block-header-subtext py-5 @php the_sub_field('bgcolor') @endphp">
         <div class="container">
             <div class="row">
                 <div class="col px-5 px-lg-0">

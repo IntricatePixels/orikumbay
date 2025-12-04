@@ -6,7 +6,7 @@
     $background_image = get_sub_field('background_image');
     $link = get_sub_field('link');
 @endphp
-<section class="banner-pillar in-page-section position-relative vh-100 d-flex align-items-end justify-content-end">
+<section data-animate="fade-in" class="banner-pillar in-page-section position-relative vh-100 d-flex align-items-end justify-content-end">
     @if ($background_image)
         <img src="{{ $background_image['url'] }}" alt="{{ $background_image['alt'] }}" class="position-absolute top-0 start-0 w-100 vh-100 object-fit-cover">
     @endif

@@ -9,7 +9,7 @@
         $background_color = the_sub_field('background_colour');
         echo $background_color;
     @endphp
-    <section class="block new block-two-panels mt-0 py-0 pb-md-0 in-page-section" id="full-width-cta-{{ get_row_index() }}" data-section-name="" style="background: #212721;">
+    <section data-animate="fade-in" class="block new block-two-panels mt-0 py-0 pb-md-0 in-page-section" id="full-width-cta-{{ get_row_index() }}" data-section-name="" style="background: #212721;">
         <div class="container-fluid">
             <div class="row">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center {{ $swap_sides ? 'col-lg-6 order-2 py-5' : 'col-lg-6 order-2 order-lg-1' }}">

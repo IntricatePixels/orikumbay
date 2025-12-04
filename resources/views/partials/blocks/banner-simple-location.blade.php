@@ -9,7 +9,7 @@ $video_embed = get_sub_field('video_embed');
 $link = get_sub_field('link');
 
 @endphp
-<section data-animate="scale" class="banner-simple-location px-4 py-5 bg-white" id="banner-location-@php echo get_row_index() @endphp" style="
+<section data-animate="slide-up" class="banner-simple-location px-4 py-5 bg-white" id="banner-location-@php echo get_row_index() @endphp" style="
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01), white 100%), url(<?php echo $background_image; ?>);
         background-size: contain;
         background-repeat: no-repeat;">

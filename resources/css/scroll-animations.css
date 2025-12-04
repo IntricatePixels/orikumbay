@@ -44,18 +44,6 @@
     transform: translateX(0);
 }
 
-/* Scale Animation */
-[data-animate="scale"] {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-[data-animate="scale"].animate-in {
-    opacity: 1;
-    transform: scale(1);
-}
-
 /* Stagger delay for multiple elements */
 [data-animate][data-delay="1"] {
     transition-delay: 0.1s;
