@@ -1,29 +1,30 @@
-<div class="top-contact-bar py-2 d-none d-lg-block" style="background-color: #6b645e;">
-    <div class="container-fluid">
-        <div class="d-flex align-items-center justify-content-end gap-4 contact-icons">
-            <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-envelope" style="font-size: 0.875rem; color: white;"></i>
-                <a href="mailto:info@brunesconstruction.al" class="text-decoration-none" style="font-size: 0.875rem; color: white;">
-                    info@brunesconstruction.al
-                </a>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-telephone" style="font-size: 0.875rem; color: white;"></i>
-                <a href="tel:+35569601580" class="text-decoration-none" style="font-size: 0.875rem; color: white;">
-                    +35569 6015802
-                </a>
-            </div>
-            <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-download" style="font-size: 0.875rem; color: white;"></i>
-                <a href="/wp-content/uploads/2025/12/OOB-Booklet-EN.pdf" class="text-decoration-none" style="font-size: 0.875rem; color: white;" target="_blank">
-                    Download Brochure
-                </a>
+<div class="fixed-header-wrapper" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030; width: 100%; transition: transform 0.3s ease;">
+    <div class="top-contact-bar py-2 d-none d-lg-block" style="background-color: #6b645e;">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-end gap-4 contact-icons">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope" style="font-size: 0.875rem; color: white;"></i>
+                    <a href="mailto:info@brunesconstruction.al" class="text-decoration-none" style="font-size: 0.875rem; color: white;">
+                        info@brunesconstruction.al
+                    </a>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone" style="font-size: 0.875rem; color: white;"></i>
+                    <a href="tel:+35569601580" class="text-decoration-none" style="font-size: 0.875rem; color: white;">
+                        +35569 6015802
+                    </a>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-download" style="font-size: 0.875rem; color: white;"></i>
+                    <a href="/wp-content/uploads/2025/12/OOB-Booklet-EN.pdf" class="text-decoration-none" style="font-size: 0.875rem; color: white;" target="_blank">
+                        Download Brochure
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<nav class="navbar sticky-top p-0 w-100">
+    <nav class="navbar p-0 w-100">
     <div class="container-fluid my-2 d-flex align-items-center">
         <div class="header-logo">
             @include('sections/header-logos')
@@ -45,6 +46,7 @@
         </div>
     </div>
 </nav>
+</div>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
@@ -164,7 +166,24 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
+    // Hide/show header on scroll
+    let lastScrollTop = 0;
+    const header = document.querySelector('.fixed-header-wrapper');
+    
     window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down & past 100px
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            // Scrolling up
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        
+        // Parallax
         document.querySelectorAll('[data-parallax]').forEach(el => {
             const scrollPosition = window.scrollY;
             const elementOffset = el.offsetTop;

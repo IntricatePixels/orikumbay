@@ -17,7 +17,7 @@
 
       @include('sections.header')
 
-      <main id="main" class="main">
+      <main id="main" class="main" style="padding-top: 120px;">
         @yield('content')
       </main>
 
