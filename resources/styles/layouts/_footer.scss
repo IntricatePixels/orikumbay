@@ -9,6 +9,18 @@ img.footer-logo {
   margin-bottom: 18px;
 }
 
+// Footer custom logo styling
+footer .custom-logo-link {
+  display: inline-block;
+  
+  img {
+    height: 60px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+  }
+}
+
 .widget-container.widget_nav_menu h3.widget-title {
   font-size: 1.125rem;
 }
