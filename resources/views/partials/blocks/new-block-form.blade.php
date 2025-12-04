@@ -6,7 +6,7 @@
     @endphp
     <section class="block block-form py-0 in-page-section py-5 d-flex justify-content-center align-items-center z-1 position-relative" id="form" style="background-image: url(<?php echo $background_image; ?>);">
         <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center pt-5">
                 <!-- Left Column -->
                 <div class="col-12 text-center">
                     <div>

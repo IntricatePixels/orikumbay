@@ -25,7 +25,7 @@ $gallery_images = get_sub_field('gallery'); // ACF Gallery field
         </div>
     </div>
     @elseif ($video_embed)
-    <video style="width: 100vw; height: 100vh; object-fit: cover;" id="hero-video" class="video-bg" autoplay loop muted playsinline onplay="hideBackgroundImage()">
+    <video style="width: 100%; height: 100vh; object-fit: cover; position: absolute; top: 0; left: 0;" id="hero-video" class="video-bg" autoplay loop muted playsinline onplay="hideBackgroundImage()">
         <source src="{{ $video_embed }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
