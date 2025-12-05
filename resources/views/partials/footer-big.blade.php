@@ -20,16 +20,30 @@
                 </div>
             </div>
 
-            <!-- Explore Column -->
+            <!-- Main Menu Column -->
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                 <h5 class="mb-3 fw-normal" style="color: #6b645e;">Explore</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="/about-us" class="text-decoration-none" style="color: #6b645e;">About Us</a></li>
-                    <li class="mb-2"><a href="/contact" class="text-decoration-none" style="color: #6b645e;">Contact</a></li>
-                    <li class="mb-2"><a href="/news" class="text-decoration-none" style="color: #6b645e;">News</a></li>
-                    <li class="mb-2"><a href="/faq" class="text-decoration-none" style="color: #6b645e;">FAQ</a></li>
-                    <li class="mb-2"><a href="/services" class="text-decoration-none" style="color: #6b645e;">Our Services</a></li>
-                </ul>
+                @if (has_nav_menu('primary_navigation'))
+                    {!! wp_nav_menu([
+                        'theme_location' => 'primary_navigation',
+                        'menu_class' => 'list-unstyled',
+                        'container' => false,
+                        'echo' => false,
+                        'depth' => 1,
+                        'link_before' => '<li class="mb-0">',
+                        'link_after' => '</li>',
+                        'fallback_cb' => false,
+                    ]) !!}
+                @endif
+                <style>
+                    #footer-menu a {
+                        color: #6b645e !important;
+                        text-decoration: none !important;
+                    }
+                    #footer-menu a:hover {
+                        text-decoration: underline !important;
+                    }
+                </style>
             </div>
 
             <!-- Location Column -->

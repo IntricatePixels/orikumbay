@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <nav class="navbar sticky-top p-0 w-100">
+    <nav class="navbar sticky-top p-0 w-100" style="background-color: #f2edea;">
     <div class="container-fluid my-2 d-flex align-items-center">
         <div class="header-logo">
             @include('sections/header-logos')
@@ -114,6 +114,19 @@
     }
     
     .navbar-nav .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .current-menu-item > a::after {
+        width: 100% !important;
+        background-color: #6b645e !important;
+    }
+
+    .current-menu-item > a {
+        color: #6b645e !important;
+    }
+
+    .navbar-nav .nav-link.active::after {
         width: 100%;
     }
 
