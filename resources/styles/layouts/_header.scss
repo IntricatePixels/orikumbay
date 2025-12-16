@@ -5,3 +5,48 @@
   }
   width: auto;
 }
+
+.offcanvas-nav-menu .nav-link {
+    padding: 0.25rem 0 !important;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #6b645e;
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        color: #6b645e !important;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.current-menu-item > a {
+    color: #6b645e !important;
+
+    &::after {
+        width: 100% !important;
+        background-color: #6b645e !important;
+    }
+}
+
+.home .current-menu-item > a::after {
+    width: 0 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}

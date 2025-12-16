@@ -4,9 +4,24 @@
 @import "common/global";
 @import "components/blocks";
 @import "components/buttons";
+@import "components/animations";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
 @import "layouts/menu";
+
+// White button with blue hover
+.btn-white-blue {
+    background-color: white !important;
+    color: #6b645e !important;
+    border: 2px solid #6b645e !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #0d6efd !important;
+        color: white !important;
+        border-color: #0d6efd !important;
+    }
+}

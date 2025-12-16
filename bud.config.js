@@ -36,7 +36,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:3000')
-    .setProxyUrl('http://orikum.local')
+    .setProxyUrl('https://orikumbay:8890')
     .watch(['resources/views', 'app']);
 
   /**
