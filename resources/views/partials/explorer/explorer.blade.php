@@ -24,7 +24,7 @@
                     <img src="@asset('images/explorer/orikum_bay_explorer_main_image.jpg')" usemap="#image-map" class="map" id="mainExplorerImage" style="cursor: pointer; transition: opacity 0.3s ease; width: 100%; height: auto;" data-bs-toggle="modal" data-bs-target="#leftModalWindow">
                     
                     <div class="position-absolute top-50 start-50 translate-middle text-center explorer-overlay" style="pointer-events: none;">
-                        <button class="btn btn-brown" style="pointer-events: auto;">Explore Apartments</button>
+                        <button class="btn btn-brown" style="pointer-events: auto;" data-bs-toggle="modal" data-bs-target="#leftModalWindow">Explore Apartments</button>
                     </div>
 
                     <map name="image-map">
