@@ -51,19 +51,6 @@
                                 @if ($subtext)
                                     <p class="mb-2 small">{!! $subtext !!}</p>
                                 @endif
-
-                                @if ($link)
-                                    @php
-                                        $link_url   = $link['url'];
-                                        $link_title = $link['title'];
-                                        $link_target = $link['target'] ? $link['target'] : '_self';
-                                    @endphp
-                                    <a class="btn btn-link px-0 small"
-                                       href="@php echo esc_url($link_url) @endphp"
-                                       target="@php echo esc_attr($link_target) @endphp">
-                                       @php echo esc_html($link_title) @endphp
-                                    </a>
-                                @endif
                             </div>
                         </div>
                     @endwhile
@@ -72,11 +59,11 @@
 
             <!-- CTA BUTTON -->
             @php
-                $cta_button = get_sub_field('cta_button');
+                $cta_button = get_sub_field('link');
             @endphp
             @if ($cta_button)
                 <div class="text-center mt-5 pt-3">
-                    <a class="btn btn-brown" 
+                    <a class="btn btn-brown right-arrow mt-0 position-relative" 
                        href="{{ esc_url($cta_button['url']) }}"
                        target="{{ esc_attr($cta_button['target'] ?: '_self') }}">
                         {{ esc_html($cta_button['title']) }}
