@@ -14,8 +14,8 @@
                 <div class="text-center mb-5 py-3 max-width-600 mx-auto">{{ the_sub_field('subhead') }}</div>
             </div>
 
-            <!-- FULL-WIDTH ROW LIST -->
-            <div class="row gy-4">
+            <!-- HORIZONTAL GRID - 5 COLUMNS -->
+            <div class="row gy-4 gx-4">
                 @if (have_rows('grid'))
                     @while (have_rows('grid'))
                         @php
@@ -26,63 +26,85 @@
                             $link     = get_sub_field('link');
                         @endphp
 
-                        <!-- Each card takes the full width -->
-                        <div class="col-12">
-                            <div class="d-flex flex-column flex-md-row align-items-start gap-4 py-4 px-3 border-bottom">
-                                <!-- Left: Image -->
+                        <!-- 5 columns per row -->
+                        <div class="col-12 col-sm-6 col-lg-2-4">
+                            <div class="text-center">
+                                <!-- Image -->
                                 @if ($image)
-                                    <div class="flex-shrink-0 w-100 w-md-auto" style="width: 260px;">
+                                    <div class="mb-3">
                                         <div class="floorplan">
-
-                                        <img
-                                            src="{{ esc_url($image['url']) }}"
-                                            alt="{{ esc_attr($image['alt']) }}"
-                                            class="img-fluid d-block"
-                                            loading="lazy"
-                                        />
+                                            <img
+                                                src="{{ esc_url($image['url']) }}"
+                                                alt="{{ esc_attr($image['alt']) }}"
+                                                class="img-fluid"
+                                                loading="lazy"
+                                            />
                                         </div>
                                     </div>
-                                @endif>
+                                @endif
 
-                                <!-- Right: Text -->
-                                <div class="flex-grow-1 text-start">
-                                    @if ($subtitle)
-                                        <h3 class="mb-2 fs-5 fw-bold">{!! $subtitle !!}</h3>
-                                    @endif
+                                <!-- Text -->
+                                @if ($subtitle)
+                                    <h3 class="mb-2 fs-6 fw-bold">{!! $subtitle !!}</h3>
+                                @endif
 
-                                    @if ($subtext)
-                                        <p class="mb-0"><small>{!! $subtext !!}</small></p>
-                                    @endif
+                                @if ($subtext)
+                                    <p class="mb-2 small">{!! $subtext !!}</p>
+                                @endif
 
-                                    @if ($link)
-                                        @php
-                                            $link_url   = $link['url'];
-                                            $link_title = $link['title'];
-                                            $link_target = $link['target'] ? $link['target'] : '_self';
-                                        @endphp
-                                        <a class="btn btn-link mt-2 px-0"
-                                           href="@php echo esc_url($link_url) @endphp"
-                                           target="@php echo esc_attr($link_target) @endphp">
-                                           @php echo esc_html($link_title) @endphp
-                                        </a>
-                                    @endif
-                                </div>
+                                @if ($link)
+                                    @php
+                                        $link_url   = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                    @endphp
+                                    <a class="btn btn-link px-0 small"
+                                       href="@php echo esc_url($link_url) @endphp"
+                                       target="@php echo esc_attr($link_target) @endphp">
+                                       @php echo esc_html($link_title) @endphp
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     @endwhile
                 @endif
             </div>
+
+            <!-- CTA BUTTON -->
+            @php
+                $cta_button = get_sub_field('cta_button');
+            @endphp
+            @if ($cta_button)
+                <div class="text-center mt-5 pt-3">
+                    <a class="btn btn-brown" 
+                       href="{{ esc_url($cta_button['url']) }}"
+                       target="{{ esc_attr($cta_button['target'] ?: '_self') }}">
+                        {{ esc_html($cta_button['title']) }}
+                    </a>
+                </div>
+            @endif
         </div>
     </section>
 @endif
 
 <style>
+    .col-lg-2-4 {
+        flex: 0 0 calc(20% - 0.6rem);
+    }
+
+    .floorplan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        border-radius: 4px;
+    }
 
     .floorplan img {
-  max-width: 100%;
-  max-height: 300px;
-  height: auto;
-  object-fit: contain;
-}
-
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+    }
 </style>

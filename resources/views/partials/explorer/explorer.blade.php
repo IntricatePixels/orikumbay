@@ -1,17 +1,10 @@
 @if (get_row_layout() == 'explorer')
-
-<!-- jQuery (Ensure this is loaded first) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- Maphilight and ImageMapResizer Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js" defer></script>
-
 <section class="block bg-casa-light" id="explorer" style="min-height: auto; padding: 0.5rem 0;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 p-0">
                 @if (get_sub_field('header'))
-                    <h2 class="m-0 text-center font-black" style="font-size: 1.25rem; padding: 0.5rem 0;">
+                    <h2 class="m-0 text-center font-black">
                         @php the_sub_field('header') @endphp
                     </h2>
                 @endif
