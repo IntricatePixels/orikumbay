@@ -19,7 +19,7 @@
                                 {{ $header }}</h2>
                         @endif
                         @if ($sub_header)
-                            <h3 class="pt-3 text-white">{{ $sub_header }}</h3>
+                            <h3 class="pt-3 text-white text-start">{{ $sub_header }}</h3>
                         @endif
                         @if ($subtext)
                             <div class="my-4 text-white">{!! $subtext !!}</div>
