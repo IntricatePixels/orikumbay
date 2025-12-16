@@ -15,14 +15,14 @@
                 <div class="d-flex flex-column justify-content-center align-items-center text-center {{ $swap_sides ? 'col-lg-6 order-2 py-5' : 'col-lg-6 order-2 order-lg-1' }}">
                     <div class="pe-md-5">
                         @if ($header)
-                            <h2 class="mb-3 pt-5 text-white" data-title="{{ the_sub_field('behind_header_text') }}">
+                            <h2 class="mb-3 pt-5 text-white text-start" data-title="{{ the_sub_field('behind_header_text') }}">
                                 {{ $header }}</h2>
                         @endif
                         @if ($sub_header)
                             <h3 class="pt-3 text-white text-start">{{ $sub_header }}</h3>
                         @endif
                         @if ($subtext)
-                            <div class="my-4 text-white">{!! $subtext !!}</div>
+                            <div class="my-4 text-white text-start">{!! $subtext !!}</div>
                         @endif
                         @foreach ($buttons as $button)
                             @php
