@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center {{ $swap_sides ? 'col-lg-6 order-2 py-5' : 'col-lg-6 order-2 order-lg-1' }}">
-                    <div class="pe-md-5">
+                    <div class="pe-md-5 pb-md-5">
                         @if ($header)
                             <h2 class="mb-3 pt-5 text-white text-start" data-title="{{ the_sub_field('behind_header_text') }}">
                                 {{ $header }}</h2>
