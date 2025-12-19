@@ -23,14 +23,22 @@
           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center @if ( $swap_sides ) order-lg-2 @else order-lg-1 ps-lg-0 @endif">
               @if ($gallery)
               <div class="block-image-with-list-carousel-wrapper">
-                  <div id="galleryCarousel-{{ get_row_index() }}" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div id="galleryCarousel-{{ get_row_index() }}" class="carousel slide carousel-fade" data-bs-ride="false" data-bs-interval="false" data-bs-touch="true">
                       <div class="carousel-inner h-100">
                           @foreach ($gallery as $index => $image)
-                          <div class="carousel-item @if ($index == 0) active @endif" data-bs-interval="4000">
-                              <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy">
+                          <div class="carousel-item @if ($index == 0) active @endif">
+                              <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" onclick="var c=this.closest('.carousel'); if(c && window.bootstrap && bootstrap.Carousel){ bootstrap.Carousel.getOrCreateInstance(c).next(); }">
                           </div>
                           @endforeach
                       </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel-{{ get_row_index() }}" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel-{{ get_row_index() }}" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
                   </div>
               </div>
               @endif
