@@ -123,9 +123,6 @@ section.block-form {
   background-position: 0 0;
   background-size: cover;
   width: 100%;
-  @include media-breakpoint-up(md) {
-    margin-top: -200px;
-  }
   @include media-breakpoint-down(sm) {
     background: #6B635E !important;
   }
