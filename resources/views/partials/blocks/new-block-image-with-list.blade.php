@@ -26,7 +26,7 @@
                   <div class="carousel-inner">
                       @foreach ($gallery as $index => $image)
                       <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="4000">
-                          <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block" style="object-fit:contain;">
+                          <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block w-100" style="height: 400px; object-fit: cover;">
                       </div>
                       @endforeach
                   </div>
