@@ -57,7 +57,11 @@ img {
   width: 100%;
   max-width: 800px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
+  height: 360px;
+}
+
+.block-image-with-list-carousel-wrapper .carousel {
+  height: 100%;
 }
 
 .block-image-with-list-carousel-wrapper .carousel-inner,
@@ -66,9 +70,10 @@ img {
 }
 
 .block-image-with-list-carousel-wrapper .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 .rounded-corner-bottom {

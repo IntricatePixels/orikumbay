@@ -3,6 +3,7 @@
   @php
   $header = get_sub_field('header');
   $gallery = get_sub_field('image_gallery');
+  $gallery_count = is_array($gallery) ? count($gallery) : 0;
   $swap_sides = get_sub_field('swap_sides');
   $icon_image = get_sub_field('icon_image');
   $rounded_corner = get_sub_field('rounded_corner');
@@ -31,6 +32,7 @@
                           </div>
                           @endforeach
                       </div>
+                      @if ($gallery_count > 1)
                       <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel-{{ get_row_index() }}" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
@@ -39,6 +41,7 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                       </button>
+                      @endif
                   </div>
               </div>
               @endif
