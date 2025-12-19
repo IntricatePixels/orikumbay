@@ -13,7 +13,7 @@
                         @php the_sub_field('sub_header') @endphp
                     </p>
                 @endif
-                <div class="map-container position-relative" style="background-color: #94b1e0;">
+                <div class="map-container position-relative">
                     @php
                         $id = 2414;
                         $idExists = does_drawattention_id_exist($id);
