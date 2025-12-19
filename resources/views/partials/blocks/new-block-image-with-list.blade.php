@@ -22,15 +22,16 @@
       <div class="row g-5">
           <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center @if ( $swap_sides ) order-lg-2 @else order-lg-1 ps-lg-0 @endif">
               @if ($gallery)
-              <div id="galleryCarousel" class="carousel slide carousel-fade carousel-in-page" data-bs-ride="carousel" style="max-width: 800px;">
-                  <div class="carousel-inner">
-                      @foreach ($gallery as $index => $image)
-                      <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="4000">
-                          <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block w-100" style="height: 400px; object-fit: cover;">
+              <div class="block-image-with-list-carousel-wrapper">
+                  <div id="galleryCarousel-{{ get_row_index() }}" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                      <div class="carousel-inner h-100">
+                          @foreach ($gallery as $index => $image)
+                          <div class="carousel-item @if ($index == 0) active @endif" data-bs-interval="4000">
+                              <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy">
+                          </div>
+                          @endforeach
                       </div>
-                      @endforeach
                   </div>
-
               </div>
               @endif
           </div>
