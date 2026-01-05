@@ -10,14 +10,14 @@
                         <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}" style="height: 50px; width: auto;">
                     @endif
                 </div>
-                <div class="social-icons d-flex gap-3">
+                <!-- <div class="social-icons d-flex gap-3">
                     <a href="#" class="text-dark" title="Instagram">
                         <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
                     </a>
                     <a href="#" class="text-dark" title="Facebook">
                         <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
 
             <!-- Main Menu Column -->
