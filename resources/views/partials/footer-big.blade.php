@@ -66,11 +66,3 @@
         </div>
     </div>
 </footer>
-
-<div class="footer-bottom bg-light py-4 text-center">
-    <div class="container">
-        <a href="https://brunes.al" target="_blank" title="Brunes Construction">
-            <img src="@asset('images/brunes-construction-logo.png')" alt="Brunes Construction" style="height: 60px; width: auto;">
-        </a>
-    </div>
-</div>
