@@ -7,7 +7,8 @@
                     @if (has_custom_logo())
                         {!! get_custom_logo() !!}
                     @else
-                        <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}" style="height: 50px; width: auto;">
+                        <img src="{{ get_theme_mod('kube_logo') }}" alt="{{ get_bloginfo('name') }}"
+                            style="height: 50px; width: auto;">
                     @endif
                 </div>
                 <div class="social-icons">
@@ -17,10 +18,12 @@
                     <a href="#" class="text-dark" title="Facebook">
                         <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
                     </a> -->
-                    <p class="mb-0 lh-sm">Developed & Constructed by <a href="https://brunes.al" target="_blank" title="Brunes Construction">Brunes Construction</a></p>
+                    <p class="mb-0 lh-sm">Developed & Constructed by <a href="https://brunes.al" target="_blank"
+                            title="Brunes Construction">Brunes Construction</a></p>
                     <div class="mt-4"><a href="https://brunes.al" target="_blank" title="Brunes Construction">
-                        <img src="@asset('images/brunes-construction-logo.png')" alt="Brunes Construction" style="height: 40px; width: auto;">
-                    </a></div>
+                            <img src="@asset('images/brunes-construction-logo2.png')" alt="Brunes Construction"
+                                style="height: 40px; width: auto;">
+                        </a></div>
                 </div>
             </div>
 
@@ -28,7 +31,7 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                 <h5 class="mb-3 fw-normal" style="color: #6b645e;">Explore</h5>
                 @if (has_nav_menu('primary_navigation'))
-                    {!! wp_nav_menu([
+                                {!! wp_nav_menu([
                         'theme_location' => 'primary_navigation',
                         'menu_class' => 'list-unstyled',
                         'container' => false,
@@ -44,6 +47,7 @@
                         color: #6b645e !important;
                         text-decoration: none !important;
                     }
+
                     #footer-menu a:hover {
                         text-decoration: underline !important;
                     }
