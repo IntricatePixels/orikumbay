@@ -21,7 +21,7 @@
                     <p class="mb-0 lh-sm">Developed & Constructed by <a href="https://brunes.al" target="_blank"
                             title="Brunes Construction">Brunes Construction</a></p>
                     <div class="mt-4"><a href="https://brunes.al" target="_blank" title="Brunes Construction">
-                            <img src="@asset('images/brunes-construction-logo2.png')" alt="Brunes Construction"
+                            <img src="@asset('images/brunes-construction-logo1.png')" alt="Brunes Construction"
                                 style="height: 40px; width: auto;">
                         </a></div>
                 </div>
