@@ -64,7 +64,7 @@
             <!-- Contact Column -->
             <div class="col-lg-3 col-md-6">
                 <h5 class="mb-3 fw-normal" style="color: #6b645e;">Contact</h5>
-                <p style="color: #6b645e;">+35569601580</p>
+                <p style="color: #6b645e;">+355696015802</p>
                 <p style="color: #6b645e;">info@brunesconstruction.al</p>
             </div>
         </div>
