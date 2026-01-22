@@ -20,6 +20,116 @@
                         Download Brochure
                     </a>
                 </div>
+                @php
+                        $currentPath = $_SERVER['REQUEST_URI'] ?? '/';
+                        $isAlbanian = str_starts_with($currentPath, '/al');
+                    @endphp
+                    <div class="language-dropdown">
+                        <button class="lang-dropdown-toggle" type="button">
+                            <span class="lang-flag">{{ $isAlbanian ? '🇦🇱' : '🇬🇧' }}</span>
+                            <span>{{ $isAlbanian ? 'AL' : 'EN' }}</span>
+                            <i class="bi bi-chevron-down lang-chevron"></i>
+                        </button>
+                        <div class="lang-dropdown-menu">
+                            <a href="/" class="lang-option {{ !$isAlbanian ? 'active' : '' }}">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span class="lang-name">English</span>
+                                @if(!$isAlbanian)<i class="bi bi-check2"></i>@endif
+                            </a>
+                            <a href="/al/" class="lang-option {{ $isAlbanian ? 'active' : '' }}">
+                                <span class="lang-flag">🇦🇱</span>
+                                <span class="lang-name">Shqip</span>
+                                @if($isAlbanian)<i class="bi bi-check2"></i>@endif
+                            </a>
+                        </div>
+                    </div>
+                <style>
+                    .language-dropdown {
+                        position: relative;
+                    }
+                    .lang-dropdown-toggle {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.375rem;
+                        background: transparent;
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        border-radius: 4px;
+                        padding: 0.35rem 0.625rem;
+                        color: white;
+                        font-size: 0.8125rem;
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                    }
+                    .lang-dropdown-toggle:hover {
+                        background: rgba(255, 255, 255, 0.1);
+                        border-color: rgba(255, 255, 255, 0.5);
+                    }
+                    .lang-chevron {
+                        font-size: 0.625rem;
+                        transition: transform 0.2s ease;
+                    }
+                    .language-dropdown:hover .lang-chevron {
+                        transform: rotate(180deg);
+                    }
+                    .lang-dropdown-menu {
+                        position: absolute;
+                        top: calc(100% + 0.5rem);
+                        right: 0;
+                        min-width: 140px;
+                        background: white;
+                        border-radius: 6px;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translateY(-8px);
+                        transition: all 0.2s ease;
+                        overflow: hidden;
+                        z-index: 9999;
+                    }
+                    .language-dropdown:hover .lang-dropdown-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
+                    }
+                    .lang-option {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        padding: 0.625rem 0.875rem;
+                        color: #333;
+                        text-decoration: none;
+                        font-size: 0.8125rem;
+                        transition: background 0.15s ease;
+                    }
+                    .lang-option:hover {
+                        background: #f5f5f5;
+                        color: #333;
+                    }
+                    .lang-option.active {
+                        background: #f9f9f9;
+                    }
+                    .lang-option .lang-code {
+                        font-weight: 600;
+                        min-width: 1.5rem;
+                    }
+                    .lang-option .lang-name {
+                        flex: 1;
+                        color: #666;
+                    }
+                    .lang-option .bi-check2 {
+                        color: #6b645e;
+                        font-size: 0.875rem;
+                    }
+                    .top-contact-bar {
+                        overflow: visible !important;
+                    }
+                    .top-contact-bar .container-fluid {
+                        overflow: visible !important;
+                    }
+                    .contact-icons {
+                        overflow: visible !important;
+                    }
+                </style>
             </div>
         </div>
     </div>

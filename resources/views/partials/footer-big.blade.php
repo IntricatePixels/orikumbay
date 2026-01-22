@@ -66,7 +66,49 @@
                 <h5 class="mb-3 fw-normal" style="color: #6b645e;">Contact</h5>
                 <p style="color: #6b645e;">+355696015802</p>
                 <p style="color: #6b645e;">info@brunesconstruction.al</p>
+                
+                <!-- Language Switcher -->
+                @php
+                    $currentPath = $_SERVER['REQUEST_URI'] ?? '/';
+                    $isAlbanian = str_starts_with($currentPath, '/al');
+                @endphp
+                <div class="footer-language-switcher mt-4">
+                    <div class="d-flex gap-2">
+                        <a href="/" class="footer-lang-link {{ !$isAlbanian ? 'active' : '' }}">
+                            <span class="lang-flag">🇬🇧</span> English
+                        </a>
+                        <a href="/al/" class="footer-lang-link {{ $isAlbanian ? 'active' : '' }}">
+                            <span class="lang-flag">🇦🇱</span> Shqip
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </footer>
+
+<style>
+    .footer-lang-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.375rem 0.75rem;
+        border: 1px solid #6b645e;
+        border-radius: 4px;
+        color: #6b645e;
+        text-decoration: none;
+        font-size: 0.8125rem;
+        transition: all 0.2s ease;
+    }
+    .footer-lang-link:hover {
+        background: #6b645e;
+        color: white;
+    }
+    .footer-lang-link.active {
+        background: #6b645e;
+        color: white;
+    }
+    .footer-lang-link .lang-flag {
+        font-size: 1rem;
+    }
+</style>
