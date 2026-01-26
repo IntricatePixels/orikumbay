@@ -150,5 +150,7 @@ section.block-form {
   @include media-breakpoint-down(sm) {
     background: #6B635E !important;
   }
-  padding-top: 180px !important;
+  @include media-breakpoint-up(md) {
+    padding-top: 180px !important;
+  }
 }

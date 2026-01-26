@@ -26,8 +26,8 @@
                             $link     = get_sub_field('link');
                         @endphp
 
-                        <!-- 5 columns per row -->
-                        <div class="col-12 col-sm-6 col-lg-2-4">
+                        <!-- 1 col mobile, 2 col tablet, 5 col desktop -->
+                        <div class="col-12 col-md-5 col-lg-4">
                             <div class="text-center">
                                 <!-- Image -->
                                 @if ($image)
