@@ -18,8 +18,8 @@
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <i class="bi bi-download" style="font-size: 0.875rem; color: white;"></i>
-                    <a href="/wp-content/uploads/2025/12/OOB-Booklet-EN.pdf" class="text-decoration-none"
-                        style="font-size: 0.875rem; color: white;" target="_blank">
+                    <a href="{{ get_current_blog_id() == 2 ? '/wp-content/uploads/OOB%20Booklet_AL_Web.pdf' : '/wp-content/uploads/2025/12/OOB-Booklet-EN.pdf' }}"
+                        class="text-decoration-none" style="font-size: 0.875rem; color: white;" target="_blank">
                         {{ get_current_blog_id() == 2 ? 'Shkarko Broshurën' : 'Download Brochure' }}
                     </a>
                 </div>
@@ -210,7 +210,8 @@
         </div>
         <div class="d-flex align-items-center gap-2 mt-2">
             <i class="bi bi-download"></i>
-            <a href="/wp-content/uploads/2025/12/OOB-Booklet-EN.pdf" class="text-decoration-none" target="_blank">
+            <a href="{{ get_current_blog_id() == 2 ? '/wp-content/uploads/OOB%20Booklet_AL_Web.pdf' : '/wp-content/uploads/2025/12/OOB-Booklet-EN.pdf' }}"
+                class="text-decoration-none" target="_blank">
                 {{ get_current_blog_id() == 2 ? 'Shkarko Broshurën' : 'Download Brochure' }}
             </a>
         </div>
