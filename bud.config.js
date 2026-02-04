@@ -18,7 +18,8 @@ export default async (app) => {
   app
     .entry('app', ['@scripts/app', '@styles/app'])
     .entry('editor', ['@scripts/editor', '@styles/editor'])
-    .assets(['images']);
+    .assets(['images'])
+    .stylelint.enable(false);
 
   /**
    * Set public path
@@ -48,7 +49,7 @@ export default async (app) => {
    * @see {@link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json}
    */
   app.wpjson
-    .setSettings({
+    .settings({
       background: {
         backgroundImage: true,
       },

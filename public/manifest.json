@@ -13,7 +13,6 @@
   "images/vertical_border.svg": "images/vertical_border.svg",
   "images/brunes-construction-logo-black3.png": "images/brunes-construction-logo-black3.png",
   "images/brunes-construction-logo-black.png": "images/brunes-construction-logo-black.png",
-  "../theme.json": "../theme.json",
   "images/icon_header_location_new.svg": "images/icon_header_location_new.svg",
   "images/arrow-right-long-regular.svg": "images/arrow-right-long-regular.svg",
   "images/arrow-up-right-from-square-light2.svg": "images/arrow-up-right-from-square-light2.svg",
@@ -26,5 +25,6 @@
   "images/icon_plus_active.svg": "images/icon_plus_active.svg",
   "images/icon_plus_blue_active.svg": "images/icon_plus_blue_active.svg",
   "images/icon_plus_regular.svg": "images/icon_plus_regular.svg",
-  "entrypoints.json": "entrypoints.json"
+  "entrypoints.json": "entrypoints.json",
+  "../theme.json": "../theme.json"
 }
