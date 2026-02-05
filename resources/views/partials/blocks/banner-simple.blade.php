@@ -24,14 +24,14 @@
             style="height: 50%; background: linear-gradient(to bottom, rgba(107,100,94,0), rgba(107,100,94,1)); z-index: 5;">
         </div>
         <div class="w-100 d-flex flex-column align-items-center position-relative" style="z-index: 10;">
-            <h2 class="text-white text-center pb-3 pb-lg-4">{{ the_sub_field('hero_title') }}</h2>
+            <h2 class="text-white text-center pb-5 m-0">{{ the_sub_field('hero_title') }}</h2>
             @if ($button)
                 @php
                     $link_url = $button['url'];
                     $link_title = $button['title'];
                     $link_target = $button['target'] ? $button['target'] : '_self';
                 @endphp
-                <a class="btn btn-brown right-arrow mt-0" href="@php echo esc_url($link_url) @endphp"
+                <a class="btn btn-brown right-arrow mt-0 mb-2" href="@php echo esc_url($link_url) @endphp"
                     target="@php echo esc_attr($link_target) @endphp">
                     @php echo esc_html($link_title) @endphp
                 </a>

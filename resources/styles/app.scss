@@ -12,6 +12,19 @@
 @import "layouts/tinymce";
 @import "layouts/menu";
 
+
+#main {
+    padding-top: 96px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 140px;
+    }
+}
+
+.hotspots-interaction {
+    margin: 0 !important;
+}
+
 // White button with blue hover
 .btn-white-blue {
     background-color: white !important;

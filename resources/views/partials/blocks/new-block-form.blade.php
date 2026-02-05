@@ -7,20 +7,22 @@
         $left_description = get_sub_field('left_description');
         $form_description = get_sub_field('form_description');
     @endphp
-    <section class="block block-form py-5 sm-pt-0 in-page-section pb-5 d-flex justify-content-center align-items-center z-1 position-relative" id="form" style="background-image: url(<?php echo $background_image; ?>);">
+    <section
+        class="block block-form py-0 py-lg-5 in-page-section d-flex justify-content-center align-items-center z-1 position-relative"
+        id="form" style="background-image: url(<?php    echo $background_image; ?>);">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center md-pt-5">
                 <!-- Left Column -->
                 <div class="col-12 text-center">
                     <div>
-                    @if ($logo_image)
-                        @php
-                            $logo_url = $logo_image['url'];
-                            $logo_alt = $logo_image['alt'];
-                        @endphp
-                        <img class="form-logo-image pb-4" style="height: 80px;" src="{{ esc_url($logo_url) }}"
-                            alt="{{ esc_attr($logo_alt) }}" />
-                    @endif
+                        @if ($logo_image)
+                            @php
+                                $logo_url = $logo_image['url'];
+                                $logo_alt = $logo_image['alt'];
+                            @endphp
+                            <img class="form-logo-image pb-4" style="height: 80px;" src="{{ esc_url($logo_url) }}"
+                                alt="{{ esc_attr($logo_alt) }}" />
+                        @endif
                         @if ($h1_title)
                             <h2 class="text-white fs-2">{{ $h1_title }}</h2>
                         @endif

@@ -9,14 +9,17 @@
         $background_color = the_sub_field('background_colour');
         echo $background_color;
     @endphp
-    <section data-animate="fade-in" class="block new block-two-panels mt-0 py-0 pb-md-0 in-page-section" id="full-width-cta-{{ get_row_index() }}" data-section-name="" style="background: #212721;">
+    <section data-animate="fade-in" class="block new block-two-panels mt-0 py-5 px-3 p-lg-0 in-page-section"
+        id="full-width-cta-{{ get_row_index() }}" data-section-name="" style="background: #212721;">
         <div class="container-fluid">
             <div class="row">
-                <div class="d-flex flex-column justify-content-center align-items-center text-center {{ $swap_sides ? 'col-lg-6 order-2 py-5' : 'col-lg-6 order-2 order-lg-1' }}">
+                <div
+                    class="d-flex flex-column justify-content-center align-items-center text-center {{ $swap_sides ? 'col-lg-6 order-2 py-5' : 'col-lg-6 order-2 order-lg-1' }}">
                     <div class="pe-md-5 pb-md-5">
                         @if ($header)
                             <h2 class="mb-3 pt-5 text-white text-start" data-title="{{ the_sub_field('behind_header_text') }}">
-                                {{ $header }}</h2>
+                                {{ $header }}
+                            </h2>
                         @endif
                         @if ($sub_header)
                             <h3 class="pt-3 text-white text-start">{{ $sub_header }}</h3>
@@ -39,14 +42,14 @@
                     </div>
                 </div>
                 <div class="{{ $swap_sides ? 'col-lg-6 order-1 p-0 mb-3 mb-md-0' : 'col-lg-6 order-1 order-lg-2 p-0' }}">
-    @if ($image)
-        <?php
-        $image_src = wp_get_attachment_image_src($image, 'full');
-        $image_url = $image_src[0];
-        ?>
-        <img src="{{ $image_url }}" class="object-fit" loading="lazy">
-    @endif
-</div>
+                    @if ($image)
+                                <?php
+                        $image_src = wp_get_attachment_image_src($image, 'full');
+                        $image_url = $image_src[0];
+                                                        ?>
+                                <img src="{{ $image_url }}" class="object-fit" loading="lazy">
+                    @endif
+                </div>
 
             </div>
         </div>

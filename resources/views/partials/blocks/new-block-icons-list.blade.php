@@ -10,10 +10,10 @@
     <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #6B635E;">
         <div class="container">
           @if ($header)
-          <div class="row justify-content-lg-center text-md-center my-5 mb-lg-0">
+          <div class="row justify-content-lg-center text-md-center">
             <div class="mt-5">
                 @if ($header_eyebrow)
-                  <h2 class="hero-eyebrow text-sm-start text-white text-md-center mb-3">{!! $header_eyebrow !!}</h2>
+                  <h2 class="hero-eyebrow text-sm-start text-white text-md-center">{!! $header_eyebrow !!}</h2>
                 @endif
                 @if ($header)
                 <h3 class="fs-1 font-black mb-3 text-white  pt-0 mt-0">{!! $header !!}</h3>
