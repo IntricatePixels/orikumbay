@@ -10,7 +10,7 @@
       @endphp
 
     <section data-animate="slide-up"
-        class="block-image-with-list px-4 px-md-0 py-3 py-lg-5 my-0 in-page-section @if ($rounded_corner) rounded-corner-bottom @endif"
+        class="block-image-with-list px-4 px-md-0 py-5 my-0 in-page-section @if ($rounded_corner) rounded-corner-bottom @endif"
         id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
             @if ($header)

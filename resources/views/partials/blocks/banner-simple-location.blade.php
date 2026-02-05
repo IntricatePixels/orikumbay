@@ -15,7 +15,7 @@
                                     background-size: contain;
                                     background-repeat: no-repeat;">
         <div class="container">
-            <div class="row {{ !empty($background_image) ? 'location-text' : '' }} py-5">
+            <div class="row {{ !empty($background_image) ? 'location-text' : '' }} pt-5">
                 <div class="col-12 col-lg-6 text-center pe-lg-5">
                     @if ($icon_image)
                         <img src="{{ $icon_image['url'] }}" alt="{{ $icon_image['alt'] }}" class="pb-3" style="width: 80px;">
@@ -35,7 +35,7 @@
                         </a>
                     @endif
                 </div>
-                <div class="col col-lg-6 d-grid gap-4" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="col col-lg-6 d-grid gap-4 align-items-center mb-5" style="grid-template-columns: repeat(2, 1fr);">
                     @if ($right_side_image_1)
                         <img src="{{ $right_side_image_1['url'] }}" alt="{{ $right_side_image_1['alt'] }}" class="img-fluid">
                     @endif
